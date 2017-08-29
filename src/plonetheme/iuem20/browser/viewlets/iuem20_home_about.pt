@@ -1,0 +1,38 @@
+
+<!-- viewlet HOME carousel -->
+ 
+<div tal:define="aboutBgImage python:view.getAboutBgImage();
+                 aboutDocuments python:view.getAboutUsDocuments();
+                 aboutTitle python:view.getAboutTitle();
+                 portal_state context/@@plone_portal_state;
+                 portal_url portal_state/portal_url;
+                 ">
+
+
+    <!-- DEBUT SECTION ABOUT-->
+   <section id="iuem20-home-about"
+            tal:condition="aboutDocuments">
+		<img id="scrollreveal" class="hidden-xs"
+		     tal:attributes="src string:${portal_url}/images/${aboutBgImage}" />
+   		<!-- class="container-fluid" si nb == 3 -->
+   		<div class="container"
+   		     tal:define="nbDocs python:len(aboutDocuments);
+   		                 classesAbout python:view.getAboutClasses(nbDocs)">
+   			<div class="super text-center"
+   			     tal:content="string:${aboutTitle}">What we do</div>
+   			<div class="row">
+   			<span tal:omit-tag="" tal:repeat="aboutDocument aboutDocuments">
+   			  <div tal:attributes="class python:classesAbout[repeat.aboutDocument.number - 1]">
+   			    <h2 class="text-center"
+   			        tal:content="string:${aboutDocument/title}">Benthic and coastal biodiversity science</h2>
+				<p class="home-content"
+				   tal:content="string:${aboutDocument/description}">Lorem ipsum
+				</p>
+   			  </div>
+			</span>
+   			</div>
+   		</div>
+   </section>
+
+
+</div>

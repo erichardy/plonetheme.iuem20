@@ -1,0 +1,73 @@
+
+<!-- viewlet HOME Rich text + alternate rich Texts -->
+ 
+<div tal:define="portal_state context/@@plone_portal_state;
+                 portal_url portal_state/portal_url;
+                 richText view/getRichText;
+                 displayTitle view/displayTitle;
+                 displayDescription view/displayDescription;
+                 display1 view/displayAlt1;
+                 label1 view/getLabel1;
+                 richTextAlt1 view/getTextAlt1;
+                 display2 view/displayAlt2;
+                 label2 view/getLabel2;
+                 richTextAlt2 view/getTextAlt2;
+                 ">
+
+    <section id="iuem20-home-richtext">
+           	<div id="HomeRichtext"
+           	     class="container">
+				<div class="row">
+				  <div class="iuem20-title"
+				       tal:condition="python:displayTitle"
+				       tal:content="string:${context/title}">
+                    Title
+                </div>
+                <!---Champ sous titre/description--->
+                <div class="iuem20-subtitle"
+                     tal:condition="python:displayDescription"
+                     tal:content="string:${context/description}">
+                    Description
+                </div> 
+				</div>
+            </div>
+
+    <section class="pushbottom">
+		<span tal:condition="python:display1 and richTextAlt1"
+		    class="align-right">
+		      <button type="button"
+		              id="show-alt1-version"
+		              class="btn btn-default collapser"
+		              tal:content="string:${label1}">label 1</button>
+		</span>
+		<span tal:condition="python:display2 and richTextAlt2"
+		    class="align-right">
+		      <button type="button"
+		              id="show-alt2-version"
+		              class="btn btn-default collapser"
+		              tal:content="string:${label2}">label 2</button>
+		</span>   
+		<div class="iuem20-collapse" style="display: none"
+		         id="show-alt1-version-collapse">
+			  <div tal:content="structure string:${richTextAlt1}">
+			  	text ALT1
+			  </div>
+		</div>
+		<div class="iuem20-collapse" style="display: none"
+                 id="show-alt2-version-collapse">
+		  <div tal:content="structure string:${richTextAlt2}">
+		  	text ALT2
+		  </div>
+		</div>
+        <!------Original Rich Text---------->
+        <div tal:content="structure string:${richText}">
+             text FR
+        </div>
+   </section>
+
+
+
+    </section>
+
+
+</div>

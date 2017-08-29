@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bin/plone-compile-resources --bundle=plonetheme-iuem20 && bin/instance fg

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<object name="Event" meta_type="Dexterity FTI" i18n:domain="plone"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+ <!-- Basic properties -->
+ <property name="title" i18n:translate="">Event</property>
+ <property name="description" i18n:translate="">Events can be shown in calendars.</property>
+ <property name="icon_expr"></property>
+ <property name="allow_discussion">False</property>
+
+ <property name="factory">Event</property>
+ <!-- Enabled behaviors -->
+ <property name="behaviors" purge="false">
+  <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
+  <element value="plonetheme.iuem20.browser.behaviors.thumbnail.IThumbnail"/>
+  <element value="plonetheme.iuem20.browser.behaviors.alt_languages.IAltLanguages"/>
+ </property>
+
+ <!-- View and aliases
+ <property name="view_methods">
+  <element value="event_view"/>
+ </property> -->
+
+
+</object>

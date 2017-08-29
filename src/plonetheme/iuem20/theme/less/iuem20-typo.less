@@ -1,0 +1,193 @@
+
+
+/*--------------------TYPOGRAPHIE---------------------------------------------------*/
+
+/*VARIABLES*/
+
+@text-bright: #FFF;
+@text-dark: #000;
+@text-grey: #808080;
+@color-main: #47AAC9;
+@color-vivid: #8BB797;
+@color-contrast: #DE963E;
+@font-content: 'Merriweather';
+@font-titre: 'Exo';
+@font-contrast: 'Courgette';
+
+/* Modifications de texte */
+/* color */
+.bright {
+	color: @text-bright;
+	}
+.dark {
+	color: @text-dark;
+	}
+.grey {
+	color: @text-grey;
+	}
+.main-color {
+	color: @color-main;
+	}
+.vivid {
+	color: @color-vivid;
+}
+.italic {
+	font-style: italic;
+}
+
+/* text size */
+.small {
+	font-size: 80%;
+	}
+.large {
+	font-size: 125%;
+	}
+.xlarge {
+	font-size: 200%;
+	}
+
+	
+/* Headings */
+
+.super {
+	font-family: @font-contrast;
+	font-size: 3.5em;
+	font-weight: 300;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.super-small {
+	font-family: @font-contrast;
+	font-size: 2.5em;
+	font-weight: 300;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @font-titre;
+  font-weight: normal;
+}
+
+h1, .h1 {
+	font-size: 3em;
+}
+
+h2, .h2 {
+	font-size: 2em;
+}
+
+h3, .h3 {
+	font-size: 1.5em;
+}
+
+/*----CHAMPS GENERIQUES-----*/
+.img-author {
+		.grey;
+		.small;
+		.text-right;
+		padding: 10px 35px 10px 0;
+		&:before {
+			content: "(C) ";
+		}
+}	
+
+.img-no-author {
+		.grey;
+		.small;
+		.text-right;
+		padding: 10px 35px 10px 0;
+		&:before {
+			content: "DR";
+		}
+}	
+
+
+.iuem20-title {
+	.h1;
+	.text-left;
+	.pushtop;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 767px) { /*-Adaptation du margin bottom sur xs---------*/
+	.iuem20-title {
+		.h1;
+		.text-left;
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+}
+.iuem20-subtitle {
+	.h3;
+	.text-left;
+	color: @color-main;
+	font-weight: 600;
+}
+
+.iuem20-dates {
+	.text-left;
+	.grey; 
+	margin-bottom: 15px;
+}
+
+/* Content font */
+body{
+	font-family:@font-content;
+	font-size: 14px;
+}
+
+p, .p {
+	font-family:@font-content;
+	font-size: 1.1em;
+	line-height: 1.65;
+	.text-justify;
+}
+
+/* liens--------------------------------*/
+a, .a {
+	color: @color-main;
+	text-decoration: none;
+}
+
+a:visited, .a:visited {
+	color: @color-main;
+	text-decoration: none;
+}
+
+a:hover, .a:hover {
+	color: @color-contrast;
+	text-decoration: none;
+}
+ 
+a:active, .a:actve {
+	color: @color-vivid;
+	text-decoration: none;
+}
+
+/* Alignment */
+
+.text-left  {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify  {
+	text-align: justify;
+}
+.text-nowrap  { 
+	white-space: nowrap;
+}
+
+
+
+
+	

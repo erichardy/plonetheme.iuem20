@@ -1,0 +1,93 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.iuem20">
+
+<!-- Viewlet manager pour la HOME Page et ses viewlets -->
+<browser:viewletManager
+    name="iuem20-home"
+    for="*"
+    provides="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    permission="zope2.View"
+    />
+
+<browser:viewlet
+    name="iuem20-home-carousel"
+    manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
+    class=".iuem20_home_carousel.iuem20HomeCarousel"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_home_carousel.pt"
+    permission="zope2.View"
+    />
+
+<browser:viewlet
+    name="iuem20-home-thumbnails"
+    manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
+    class=".iuem20_home_thumbnails.iuem20HomeThumbnails"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_home_thumbnails.pt"
+    permission="zope2.View"
+    />
+
+<browser:viewlet
+    name="iuem20-home-news"
+    manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
+    class=".iuem20_home_news.iuem20HomeNews"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_home_news.pt"
+    permission="zope2.View"
+    />
+
+<browser:viewlet
+    name="iuem20-home-about"
+    manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
+    class=".iuem20_home_about.iuem20HomeAbout"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_home_about.pt"
+    permission="zope2.View"
+    />
+
+<browser:viewlet
+    name="iuem20-home-richtext"
+    manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
+    class=".iuem20_home_richtext.iuem20HomeRichText"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_home_richtext.pt"
+    permission="zope2.View"
+    />
+<!-- FIN Viewlet manager pour la HOME Page et ses viewlets -->
+
+<!-- VIEWLET Manager Alt Languages -->
+<browser:viewletManager
+    name="alt-languages"
+    for="*"
+    provides="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20AltLanguages"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    permission="zope2.View"
+    />
+<browser:viewlet
+    name="iuem20-alt-langs"
+    manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20AltLanguages"
+    class=".iuem20_alt_languages.iuem20AltLanguages"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_alt_languages.pt"
+    permission="zope2.View"
+    />
+<!-- FIN VIEWLET Manager Alt Languages -->
+
+
+<!--
+<browser:viewlet
+    name="iuem20-home-carousel"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+    class=".iuem20_home_carousel.iuem20HomeCarousel"
+    template="iuem20_home_carousel.pt"
+    permission="zope2.View"
+    />
+-->
+
+</configure>

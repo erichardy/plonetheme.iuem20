@@ -1,0 +1,84 @@
+
+<style>
+
+</style>
+
+<div id="iuem20-links"
+     tal:define="isAnon context/@@plone_portal_state/anonymous">
+  <ul>
+    <li  class="socials" id="twiter">
+      <a href="https://twitter.com/Doc_UBL" target="_blank" title="twitter">
+        <img src=""
+             tal:attributes="src string:${context/portal_url}/++theme++plonetheme.tebl/images/logos/twitterTransparent.png" />
+      </a>
+    </li>
+    <li class="socials">
+      <a href="https://www.facebook.com/UBretagneLoireDoc" target="_blank" title="Facebook">
+        <img src=""
+             tal:attributes="src string:${context/portal_url}/++theme++plonetheme.tebl/images/logos/facebookTransparent.png" />
+      </a>
+    </li>
+
+    <li  class="socials" id="linkedin">
+      <a href="https://www.linkedin.com/edu/school?id=225455&trk=tyah&trkInfo=clickedVertical%3Aschool%2CclickedEntityId%3A225455%2Cidx%3A2-1-2%2CtarId%3A1481121903788%2Ctas%3AUniversit%C3%A9%20Bretagne%20Loire"
+         target="_blank"
+         title="Linded in">
+        <img src=""
+             tal:attributes="src string:${context/portal_url}/++theme++plonetheme.tebl/images/logos/linkdinTransparent.png" />
+      </a>
+    </li>
+    <li class="socials" id="youtube">
+      <a href="https://www.youtube.com/playlist?list=PLbCgRUgEj0mu6PsHGf1GFooWKQpiTRu_f"
+         target="_blank"
+         title="Youtube">
+        <img src=""
+             tal:attributes="src string:${context/portal_url}/++theme++plonetheme.tebl/images/logos/youTubeTransparent.png" />
+      </a>
+    </li>
+    <li class="links" id="contact"><a href="" tal:attributes="href string:${context/portal_url}/@@tebl-contact"
+           i18n:translate="Contact"
+           data-pat-plone-modal='{"prependContent": ".portalMessage", "title": "Contact", "width": "60em"}'
+           id="personaltools-contact"
+           class="pat-plone-modal"
+           title="Contacter l'&eacute;cole des docteurs de l'Universit&eacute; Bretagne Loire"
+           >CONTACT</a>
+    </li>
+
+    <li class="links"><a href="http://u-bretagneloire.fr/" target="_blank">UNIVERSIT&Eacute; BRETAGNE LOIRE
+        </a>
+    </li>
+    
+    <li class="links">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+  </ul>
+</div>
+
+<div id="iuem20-logo">
+	<div class="row ">
+	  <div class="col-md-2 col-md-offset-0 col-xs-12 col-xs-offset-0" id="iuem20-logo">
+	  <br />
+	  <a metal:define-macro="portal_logo"
+	       accesskey="1"
+	       tal:attributes="href view/navigation_root_url"
+	       i18n:domain="plone">
+	        <img src=""
+	        	 title="Universit&eacute; Bretagne Loire"
+	             tal:attributes="src string:${context/portal_url}/++theme++plonetheme.tebl/images/logos/logoUBL.png"
+	             alt="Universit&eacute; Bretagne Loire" /></a>
+	  
+	  </div>
+	  <div id="iuem20-header-text" class="col-md-10 col-xs-12 col-xs-offset-0">
+	    <div class="row">
+		    <div class="col-md-12 col-xs-12 col-xs-offset-0">
+		      <h2 id="ubl-label">Th&egrave;ses en Bretagne Loire</h2>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col-md-12 col-xs-12 col-xs-offset-0">
+			  <span class="logo-ss-title">Plateforme num&eacute;rique de gestion des sujets de th&egrave;ses</span>
+		    </div>
+		</div>
+	  </div>
+	</div>
+</div>

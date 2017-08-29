@@ -1,0 +1,53 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.iuem20">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package=".viewlets" />
+  <include package=".behaviors" />
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="plonetheme.iuem20"
+      type="plone"
+      directory="static"
+      />
+
+   <browser:page
+      name="iuem20_home"
+      for="*"
+      class=".iuem20_home.iuem20Home"
+      template="iuem20_home.pt"
+      permission="zope2.View"
+      />
+
+   <browser:page
+      name="galleria-resources"
+      for="*"
+      class=".galleria_resources.galleriaResources"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      for="*"
+       name="home-page-dataset"
+       class=".create_content.createContent"
+    permission="cmf.ManagePortal"
+  />
+
+  <browser:page
+      for="*"
+       name="debug"
+       class=".debug.debug"
+    permission="cmf.ManagePortal"
+  />
+
+
+</configure>

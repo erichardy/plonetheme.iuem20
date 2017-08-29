@@ -1,0 +1,263 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-25 09:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+#: ./browser/behaviors/startenddates.py:36
+msgid ""
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:58
+msgid "Alt language one text"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:76
+msgid "Alt language two text"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:39
+#: ./interfaces.py:88
+msgid "Alternates languages"
+msgstr ""
+
+#: ./interfaces.py:62
+msgid "Background image for about section"
+msgstr ""
+
+#: ./interfaces.py:101
+msgid "CSS classes for background"
+msgstr ""
+
+#: ./profiles/default/types/Collection.xml
+msgid "Collection"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Create HOME data set"
+msgstr ""
+
+#: ./profiles/default/registry.xml
+msgid "Custom plugins"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Debug"
+msgstr ""
+
+#: ./profiles/default/types/Folder.xml
+#: ./profiles/default/types/News_Item.xml
+msgid "Edit"
+msgstr ""
+
+#: ./profiles/default/registry.xml
+msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname|location, one per line."
+msgstr ""
+
+#: ./profiles/default/types/Event.xml
+msgid "Event"
+msgstr ""
+
+#: ./profiles/default/types/Event.xml
+msgid "Events can be shown in calendars."
+msgstr ""
+
+#: ./profiles/default/types/Folder.xml
+msgid "Folder"
+msgstr ""
+
+#: ./utils.py:109
+msgid "Invalid adress email"
+msgstr ""
+
+#: ./interfaces.py:47
+msgid "Logo filename, should be in"
+msgstr ""
+
+#: ./interfaces.py:55
+msgid "Name of the default thumb image"
+msgstr ""
+
+#: ./profiles/default/types/News_Item.xml
+msgid "News Item"
+msgstr ""
+
+#: ./interfaces.py:52
+msgid "Only One word"
+msgstr ""
+
+#: ./interfaces.py:71
+msgid "Only One word, used for news"
+msgstr ""
+
+#: ./interfaces.py:66
+msgid "Tag used for about items"
+msgstr ""
+
+#: ./interfaces.py:70
+msgid "Tag used for news on home page"
+msgstr ""
+
+#: ./interfaces.py:51
+msgid "Tag used for thumbnails on home page"
+msgstr ""
+
+#: ./profiles/default/types/Folder.xml
+#: ./profiles/default/types/News_Item.xml
+msgid "View"
+msgstr ""
+
+#: ./interfaces.py:43
+msgid "carousel interval"
+msgstr ""
+
+#: ./interfaces.py:39
+msgid "carousel label"
+msgstr ""
+
+#: ./interfaces.py:93
+msgid "default_alt_lang_one_label"
+msgstr ""
+
+#: ./interfaces.py:97
+msgid "default_alt_lang_two_label"
+msgstr ""
+
+#: ./interfaces.py:84
+msgid "display document description for Home page"
+msgstr ""
+
+#: ./interfaces.py:81
+msgid "display document title for Home page"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:48
+msgid "display first Alt lang"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:66
+msgid "display second Alt lang"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:26
+msgid "display start and end dates ?"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:30
+msgid "display time with dates ?"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:40
+msgid "end date"
+msgstr ""
+
+#: ./interfaces.py:40
+msgid "for carousel at home page"
+msgstr ""
+
+#: ./interfaces.py:67
+msgid "for home page"
+msgstr ""
+
+#. Default: "Enter the list of templates in json format                 http://www.tinymce.com/wiki.php/Plugin:template"
+#: ./profiles/default/registry.xml
+msgid "help_tinymce_templates"
+msgstr ""
+
+#: ./interfaces.py:24
+msgid "home page settings"
+msgstr ""
+
+#: ./interfaces.py:102
+msgid "i.e. for portfolio background. One class per line"
+msgstr ""
+
+#: ./interfaces.py:56
+msgid "in portal_skins/custom/images"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:53
+msgid "label for alt language one button"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:71
+msgid "label for alt language two button"
+msgstr ""
+
+#. Default: "Description"
+#: ./browser/overrides/plone.app.viewletmanager.manage-viewlets.pt:52
+msgid "label_description"
+msgstr ""
+
+#. Default: "thumbnail"
+#: ./browser/behaviors/thumbnail.py:21
+msgid "label_thumbnail"
+msgstr ""
+
+#. Default: "Templates"
+#: ./profiles/default/registry.xml
+msgid "label_tinymce_templates"
+msgstr ""
+
+#. Default: "Title"
+#: ./browser/overrides/plone.app.viewletmanager.manage-viewlets.pt:45
+msgid "label_title"
+msgstr ""
+
+#: ./interfaces.py:75
+msgid "max news to display"
+msgstr ""
+
+#: ./interfaces.py:44
+msgid "milliseconds"
+msgstr ""
+
+#: ./controlpanel.py:11
+msgid "plonetheme.iuem20 Settings"
+msgstr ""
+
+#: ./controlpanel.py:12
+msgid "plonetheme.iuem20 Settings Description"
+msgstr ""
+
+#: ./interfaces.py:48
+msgid "portal_skins/custom/images"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:59
+msgid "presentation one"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:77
+msgid "presentation two"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:35
+msgid "start date"
+msgstr ""
+
+#: ./browser/behaviors/thumbnail.py:16
+msgid "thumbnail"
+msgstr ""
+
+#: ./interfaces.py:59
+msgid "title for about section"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:49
+#: ./browser/behaviors/startenddates.py:27
+msgid "unselect to disable"
+msgstr ""

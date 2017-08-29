@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plonetheme.iuem20\n"
+
+#: ./browser/behaviors/alt_languages.py:58
+msgid "Alt language one text"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:76
+msgid "Alt language two text"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:39
+#: ./interfaces.py:88
+msgid "Alternates languages"
+msgstr ""
+
+#: ./browser/behaviors/configure.zcml:23
+msgid "AlternatesLanguages"
+msgstr ""
+
+#: ./interfaces.py:62
+msgid "Background image for about section"
+msgstr ""
+
+#: ./interfaces.py:101
+msgid "CSS classes for background"
+msgstr ""
+
+#: ./configure.zcml:31
+msgid "Installs the Plone theme package plonetheme.iuem20."
+msgstr ""
+
+#: ./utils.py:109
+msgid "Invalid adress email"
+msgstr ""
+
+#: ./interfaces.py:47
+msgid "Logo filename, should be in"
+msgstr ""
+
+#: ./interfaces.py:55
+msgid "Name of the default thumb image"
+msgstr ""
+
+#: ./interfaces.py:52
+msgid "Only One word"
+msgstr ""
+
+#: ./interfaces.py:71
+msgid "Only One word, used for news"
+msgstr ""
+
+#: ./configure.zcml:31
+msgid "Plone Theme: Iuem20"
+msgstr ""
+
+#: ./browser/behaviors/configure.zcml:32
+msgid "StartEndDates"
+msgstr ""
+
+#: ./interfaces.py:66
+msgid "Tag used for about items"
+msgstr ""
+
+#: ./interfaces.py:70
+msgid "Tag used for news on home page"
+msgstr ""
+
+#: ./interfaces.py:51
+msgid "Tag used for thumbnails on home page"
+msgstr ""
+
+#: ./browser/behaviors/configure.zcml:41
+msgid "Thumbnail"
+msgstr ""
+
+#: ./configure.zcml:40
+msgid "Uninstall: Plone Theme: Iuem20"
+msgstr ""
+
+#: ./configure.zcml:40
+msgid "Uninstalls the Plone theme package plonetheme.iuem20."
+msgstr ""
+
+#: ./browser/behaviors/configure.zcml:23
+msgid "add one or two alternates languages"
+msgstr ""
+
+#: ./browser/behaviors/configure.zcml:32
+msgid "add start and end dates"
+msgstr ""
+
+#: ./browser/behaviors/configure.zcml:41
+msgid "add thumbnail image"
+msgstr ""
+
+#: ./interfaces.py:43
+msgid "carousel interval"
+msgstr ""
+
+#: ./interfaces.py:39
+msgid "carousel label"
+msgstr ""
+
+#: ./interfaces.py:93
+msgid "default_alt_lang_one_label"
+msgstr ""
+
+#: ./interfaces.py:97
+msgid "default_alt_lang_two_label"
+msgstr ""
+
+#: ./interfaces.py:84
+msgid "display document description for Home page"
+msgstr ""
+
+#: ./interfaces.py:81
+msgid "display document title for Home page"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:48
+msgid "display first Alt lang"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:66
+msgid "display second Alt lang"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:26
+msgid "display start and end dates ?"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:30
+msgid "display time with dates ?"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:40
+msgid "end date"
+msgstr ""
+
+#: ./interfaces.py:40
+msgid "for carousel at home page"
+msgstr ""
+
+#: ./interfaces.py:67
+msgid "for home page"
+msgstr ""
+
+#: ./interfaces.py:24
+msgid "home page settings"
+msgstr ""
+
+#: ./interfaces.py:102
+msgid "i.e. for portfolio background. One class per line"
+msgstr ""
+
+#: ./interfaces.py:56
+msgid "in portal_skins/custom/images"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:53
+msgid "label for alt language one button"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:71
+msgid "label for alt language two button"
+msgstr ""
+
+#. Default: "thumbnail"
+#: ./browser/behaviors/thumbnail.py:21
+msgid "label_thumbnail"
+msgstr ""
+
+#: ./interfaces.py:75
+msgid "max news to display"
+msgstr ""
+
+#: ./interfaces.py:44
+msgid "milliseconds"
+msgstr ""
+
+#: ./controlpanel.py:11
+msgid "plonetheme.iuem20 Settings"
+msgstr ""
+
+#: ./controlpanel.py:12
+msgid "plonetheme.iuem20 Settings Description"
+msgstr ""
+
+#: ./interfaces.py:48
+msgid "portal_skins/custom/images"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:59
+msgid "presentation one"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:77
+msgid "presentation two"
+msgstr ""
+
+#: ./browser/behaviors/startenddates.py:35
+msgid "start date"
+msgstr ""
+
+#: ./browser/behaviors/thumbnail.py:16
+msgid "thumbnail"
+msgstr ""
+
+#: ./interfaces.py:59
+msgid "title for about section"
+msgstr ""
+
+#: ./browser/behaviors/alt_languages.py:49
+#: ./browser/behaviors/startenddates.py:27
+msgid "unselect to disable"
+msgstr ""

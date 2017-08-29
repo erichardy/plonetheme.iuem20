@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<object name="Collection"
+   meta_type="Dexterity FTI"
+   i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <!-- Basic metadata -->
+  <property name="title" i18n:translate="">Collection</property>
+  <property name="description"
+    i18n:translate="">Collection</property>
+  <property name="behaviors" purge="false">
+    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
+    <element value="plonetheme.iuem20.browser.behaviors.thumbnail.IThumbnail"/>
+     <element value="plonetheme.iuem20.browser.behaviors.alt_languages.IAltLanguages"/>
+  </property>
+
+  <!-- View information  -->
+  <property name="view_methods" purge="false">
+  <!--
+   <element value="bebest_newsCollection"/>
+  -->
+  </property>
+
+</object>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="plonetheme.iuem20"
+      interface="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+      />
+</layers>

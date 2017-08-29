@@ -1,0 +1,59 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="plonetheme.iuem20">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+
+  <cmf:registerDirectory name="plonetheme-iuem20" recursive="True"/>
+  <plone:static
+      directory="theme"
+      type="theme"
+      name="plonetheme.iuem20"
+      />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Plone Theme: Iuem20"
+      directory="profiles/default"
+      description="Installs the Plone theme package plonetheme.iuem20."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall: Plone Theme: Iuem20"
+      directory="profiles/uninstall"
+      description="Uninstalls the Plone theme package plonetheme.iuem20."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="plonetheme.iuem20-hiddenprofiles" />
+  <utility component=".vocabulary.bg_classes" name="iuem20.bg_classes" />
+    <!--
+    <utility component=".utils.altLangOneLabel" name="altLangOneLabel" />
+    <utility component=".utils.alt_lang_two_label" name="alt_lang_two_label" />
+      -->
+
+<!-- Views -->
+  <browser:page
+       name="iuem20-settings"
+       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+       class=".controlpanel.IPlonethemeBebestSettingsControlPanel"
+       permission="cmf.ManagePortal"
+    />
+</configure>

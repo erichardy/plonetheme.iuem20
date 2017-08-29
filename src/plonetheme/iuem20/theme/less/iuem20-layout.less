@@ -1,0 +1,273 @@
+/* LAYOUT */
+
+/* BACKGROUND VARIABLES-------------------------------------------*/
+@bg-dark: #000;
+@bg-bright: #fff;
+@bg-light-grey: #eee;
+@bg-hard-grey: #555;
+
+/*LAYOUT VARIABLES-------------------------------------------*/
+@h-offset: 80px;
+@h-padding: 40px;
+.bg-dark {
+	background-color: @bg-dark;
+	button {
+		background-color: @bg-hard-grey;
+		color: @bg-light-grey;
+	}
+	#iuem20-alt-languages {
+		.text-alt1, .text-alt2 {
+			background-color: @bg-hard-grey;
+			color: @bg-light-grey;
+		}
+	}
+	.img-author {
+		color: @bg-light-grey;
+	}
+}
+
+.bg-bright {
+	background-color: @bg-bright;
+	button {
+		background-color: @bg-light-grey;
+		color: @bg-hard-grey;
+	}
+	#iuem20-alt-languages {
+		.text-alt1, .text-alt2 {
+			background-color: @bg-light-grey;
+			color: @bg-hard-grey;
+		}
+	}
+}
+
+.bg-light-grey {
+	background-color: @bg-light-grey;
+}
+
+i.link-https:after {
+	content: "";
+}
+/* LAYOUT ---------------------------------*/
+
+body {
+	background-color: #fff;
+	min-height: 100vh;
+	width: auto;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: auto;
+}
+
+article#content {
+	/* margin-top: @h-padding; */
+	padding: 0px 0px 25px 0px;
+}
+
+/*-----images de fond fixes-----*/
+#bg-page-img {     /*---conteneur des images---*/
+	z-index:-1000;
+	position: fixed;
+	max-height: 60vh;
+	overflow: hidden;
+	img {
+		width: 100vw;
+	}
+}
+
+@media (max-width: 991px) { /*----adaptation au format sm --*/
+	div#bg-page-img  {
+		img {
+			height: 70vh;
+			width: auto;
+		}
+	}
+	nav#portal-globalnav-wrapper {
+		height: auto;
+		padding: 0px 0px 0px 25px;
+	}
+	/* */
+	article#content {
+		padding-top: 110px;
+	}
+	#viewlet-above-content {
+		padding: 95px 0 0 0;
+	}
+}
+
+@media (max-width: 767px) { /*-Adaptation du margin bottom sur xs---------*/
+	nav#portal-globalnav-wrapper {
+		height: auto;
+		padding: 0px 0px 0px 25px;
+		margin: 0px 0px 0px 0px;
+	}
+	#iuem20-global-content {
+		padding: 70px 0px 0px 0px;
+	}
+	/* */
+	article#content {
+		padding-top: 10px;
+	}
+	/* */
+	.navbar-header button.navbar-toggle {
+		margin-top: 40px;
+	}
+	.navbar-brand img {
+		height: 30px;
+		// display: none;
+	}
+}
+/*----bloc de titre-*/
+#page-title {
+	background-color: @bg-bright;
+	padding: 15px 15px 25px 15px;
+	margin-bottom: 150px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width: 767px) { /*-Adaptation du margin bottom sur xs---------*/
+	div#page-title {
+		margin-bottom: 15px;
+	}
+}
+
+.actu-img {
+	height: 40vh;
+	border-radius: 0px 0px 10px 10px;
+	padding: 0;
+	overflow: hidden;
+	img {
+		.full-width;
+		}	
+	}
+	
+/*----------Contenu de la page----------*/
+#page-content {
+	background-color: @bg-bright;
+}
+
+.w-limit {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.h-limit-400 {
+	max-height: 400px;
+	overflow: hidden;
+}
+
+.h-limit-600 {
+	max-height: 600px;
+	overflow: hidden;
+}
+
+.full-width {
+	width: 100%;
+	padding: 0;
+}
+
+/* collapses */
+.iuem20-collapse {
+	display: none;
+}
+
+.main-line {
+	border-color: @color-main;	
+}
+
+/* decalages*/ 
+ .pushtop {
+	margin-top: @h-offset;
+}
+.pushbottom {
+	margin-bottom: @h-offset/2;
+}
+
+
+/* Thumbnails */
+.thumbnail-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	.text-center;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	button {
+		align: center;
+	}
+	.thumbnail-portrait{
+		padding: 10px;
+		margin: auto;
+		.text-center;
+		max-width:300px;
+		p {
+			.small;
+			.text-center;
+		}
+		a {
+			color: @text-dark;	
+		}
+		.portrait-prime {
+				width: 150px;
+				height: 150px;
+		}
+		
+		.portrait-second {
+				width: 100px;
+				height: 100px;
+		}
+		.portrait-portfolio {
+				width: 180px;
+				Height: 180px;
+				margin-top: 30px;
+		}
+	}
+	.thumbnail-mission {
+		margin: auto;
+		margin-top: 15px;
+		padding: 10px;
+		width: 274px;
+		height: auto;
+		.header{
+			background-color: @bg-light-grey;
+			padding: 10px;
+			border-style: solid;
+   			border-width: 0px 0px 3px 0px;
+			h4 {
+				.text-left;
+				margin: 0px;
+				font-weight: 500;
+				.dark;
+				}
+			}
+		.img-mission {
+			margin: auto;
+			width: 254px;
+			height: 180px;
+			overflow: hidden;
+			border-radius: 0px 0px 15px 15px;
+			margin-bottom: 15px;
+			img {
+				height: 180px;
+				width: 254px;
+				}
+		}
+	}
+}
+
+#iuem20-global-content {
+	padding: @h-offset 0px 0px 0px;
+}
+
+/* Portlets */
+#portal-column-two {
+	padding: @h-padding 0px 0px 0px;
+}
+/* Fin portlets */
+
+/* Galleria module */
+.galleria {
+     .full-width;
+     height: 500px;
+     background: #FFF;
+}

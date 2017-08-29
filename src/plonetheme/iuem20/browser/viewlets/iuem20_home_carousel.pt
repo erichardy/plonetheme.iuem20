@@ -1,0 +1,50 @@
+
+<!-- viewlet HOME carousel -->
+ 
+<div tal:define="imgs python:view.getCarouselImages(context);
+                 interval python:view.getCarouselInterval();
+                 portal_state context/@@plone_portal_state;
+                 portal_url portal_state/portal_url;
+                 ">
+
+
+    <section id="iuem20-home-carousel"
+             class="hidden-xs"
+             tal:condition="imgs">
+           	<div id="homeCarousel"
+           	     class="carousel slide" data-ride="carousel" data-wrap="true" data-pause="false"
+           	     tal:attributes="data-interval string:${interval}">
+              <!-- Wrapper for slides -->
+                	<div class="carousel-inner carousel-home-inner" role="listbox">
+	                	<span tal:omit-tag="" tal:repeat="img imgs">
+		                  	<div tal:condition="python:repeat.img.start" class="item active">
+		                    	<img tal:attributes="src python:img.absolute_url()"
+		                    	     alt="banner"
+		                    	     class="full-width" />
+		                 	</div>
+		                 	<div tal:condition="python:not repeat.img.start" class="item">
+		                         <img tal:attributes="src python:img.absolute_url()"
+		                              alt="banner"
+		                              class="full-width" />
+		                    </div>
+	                    </span>
+                	</div>
+            </div>
+              <!-- Wrapper for info -->
+           	<div class="carousel-home-title"
+           	     tal:define="logo_name python:view.getCarouselLogoName()"
+           	     >
+           	    <div class="text-center">
+                	<img id="carousel-home-logo-white"
+                	     tal:attributes="src string:${portal_url}/images/${logo_name}"
+                	     alt="iuem20 blanc"
+                	     />
+                 </div>
+                 <div class="super bright text-center"
+                      tal:content="structure string:${view/getCarouselText}">
+                 </div>
+	        </div>
+    </section> <!--FIN SECTION CAROUSEL-->
+
+
+</div>

@@ -23,16 +23,20 @@ msgid "Alt language two text"
 msgstr ""
 
 #: ./browser/behaviors/alt_languages.py:39
-#: ./interfaces.py:88
+#: ./interfaces.py:135
 msgid "Alternates languages"
 msgstr ""
 
-#: ./interfaces.py:62
+#: ./interfaces.py:109
 msgid "Background image for about section"
 msgstr ""
 
-#: ./interfaces.py:101
+#: ./interfaces.py:176
 msgid "CSS classes for background"
+msgstr ""
+
+#: ./interfaces.py:155
+msgid "Check if galleria is installed"
 msgstr ""
 
 #: ./profiles/default/types/Collection.xml
@@ -72,15 +76,31 @@ msgstr ""
 msgid "Folder"
 msgstr ""
 
+#: ./interfaces.py:148
+msgid "Galleria params"
+msgstr ""
+
 #: ./utils.py:109
 msgid "Invalid adress email"
 msgstr ""
 
-#: ./interfaces.py:47
+#: ./interfaces.py:168
+msgid "Javascript code needed to display a gallery"
+msgstr ""
+
+#: ./interfaces.py:94
 msgid "Logo filename, should be in"
 msgstr ""
 
-#: ./interfaces.py:55
+#: ./interfaces.py:172
+msgid "Misc CSS"
+msgstr ""
+
+#: ./interfaces.py:169
+msgid "Must be a valid javascript code"
+msgstr ""
+
+#: ./interfaces.py:102
 msgid "Name of the default thumb image"
 msgstr ""
 
@@ -88,24 +108,32 @@ msgstr ""
 msgid "News Item"
 msgstr ""
 
-#: ./interfaces.py:52
+#: ./interfaces.py:99
 msgid "Only One word"
 msgstr ""
 
-#: ./interfaces.py:71
+#: ./interfaces.py:118
 msgid "Only One word, used for news"
 msgstr ""
 
-#: ./interfaces.py:66
+#: ./interfaces.py:113
 msgid "Tag used for about items"
 msgstr ""
 
-#: ./interfaces.py:70
+#: ./interfaces.py:117
 msgid "Tag used for news on home page"
 msgstr ""
 
-#: ./interfaces.py:51
+#: ./interfaces.py:98
 msgid "Tag used for thumbnails on home page"
+msgstr ""
+
+#: ./interfaces.py:160
+msgid "URL of the CSS resource for galleria"
+msgstr ""
+
+#: ./interfaces.py:164
+msgid "URL of the Javascript resource for galleria"
 msgstr ""
 
 #: ./profiles/default/types/Folder.xml
@@ -113,27 +141,27 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: ./interfaces.py:43
+#: ./interfaces.py:90
 msgid "carousel interval"
 msgstr ""
 
-#: ./interfaces.py:39
+#: ./interfaces.py:86
 msgid "carousel label"
 msgstr ""
 
-#: ./interfaces.py:93
+#: ./interfaces.py:140
 msgid "default_alt_lang_one_label"
 msgstr ""
 
-#: ./interfaces.py:97
+#: ./interfaces.py:144
 msgid "default_alt_lang_two_label"
 msgstr ""
 
-#: ./interfaces.py:84
+#: ./interfaces.py:131
 msgid "display document description for Home page"
 msgstr ""
 
-#: ./interfaces.py:81
+#: ./interfaces.py:128
 msgid "display document title for Home page"
 msgstr ""
 
@@ -157,11 +185,11 @@ msgstr ""
 msgid "end date"
 msgstr ""
 
-#: ./interfaces.py:40
+#: ./interfaces.py:87
 msgid "for carousel at home page"
 msgstr ""
 
-#: ./interfaces.py:67
+#: ./interfaces.py:114
 msgid "for home page"
 msgstr ""
 
@@ -170,16 +198,20 @@ msgstr ""
 msgid "help_tinymce_templates"
 msgstr ""
 
-#: ./interfaces.py:24
+#: ./interfaces.py:71
 msgid "home page settings"
 msgstr ""
 
-#: ./interfaces.py:102
+#: ./interfaces.py:177
 msgid "i.e. for portfolio background. One class per line"
 msgstr ""
 
-#: ./interfaces.py:56
+#: ./interfaces.py:103
 msgid "in portal_skins/custom/images"
+msgstr ""
+
+#: ./browser/iuem20_home.py:18
+msgid "iuem20_home"
 msgstr ""
 
 #: ./browser/behaviors/alt_languages.py:53
@@ -210,11 +242,11 @@ msgstr ""
 msgid "label_title"
 msgstr ""
 
-#: ./interfaces.py:75
+#: ./interfaces.py:122
 msgid "max news to display"
 msgstr ""
 
-#: ./interfaces.py:44
+#: ./interfaces.py:91
 msgid "milliseconds"
 msgstr ""
 
@@ -226,7 +258,7 @@ msgstr ""
 msgid "plonetheme.iuem20 Settings Description"
 msgstr ""
 
-#: ./interfaces.py:48
+#: ./interfaces.py:95
 msgid "portal_skins/custom/images"
 msgstr ""
 
@@ -246,11 +278,15 @@ msgstr ""
 msgid "thumbnail"
 msgstr ""
 
-#: ./interfaces.py:59
+#: ./interfaces.py:106
 msgid "title for about section"
 msgstr ""
 
 #: ./browser/behaviors/alt_languages.py:49
 #: ./browser/behaviors/startenddates.py:27
 msgid "unselect to disable"
+msgstr ""
+
+#: ./interfaces.py:156
+msgid "used for images galleries"
 msgstr ""

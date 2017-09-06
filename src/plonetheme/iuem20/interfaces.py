@@ -144,13 +144,6 @@ class IPlonethemeIuem20Settings(model.Schema):
         title=_(u'default_alt_lang_two_label'),
         default=u'Spanish',
         )
-    css_backgrounds = List(
-        title=_(u'CSS classes for background'),
-        description=_(u'i.e. for portfolio background. One class per line'),
-        value_type=TextLine(),
-        default=portfolioBGClasses,
-        required=True,
-        )
     model.fieldset('galleria',
                    label=_(u'Galleria params'),
                    fields=['galleria_installed',
@@ -175,3 +168,14 @@ class IPlonethemeIuem20Settings(model.Schema):
         title=_(u'Javascript code needed to display a gallery'),
         description=_(u'Must be a valid javascript code'),
         default=galleriaCode)
+    model.fieldset('misc_css',
+                   label=_(u'Misc CSS'),
+                   fields=['css_backgrounds',
+                           ])
+    css_backgrounds = List(
+        title=_(u'CSS classes for background'),
+        description=_(u'i.e. for portfolio background. One class per line'),
+        value_type=TextLine(),
+        default=portfolioBGClasses,
+        required=True,
+        )

@@ -23,7 +23,7 @@ msgid "Alt language two text"
 msgstr "Texte de la seconde langue additionnelle"
 
 #: ./browser/behaviors/alt_languages.py:39
-#: ./interfaces.py:88
+#: ./interfaces.py:135
 msgid "Alternates languages"
 msgstr "Langues Additionnelles"
 
@@ -31,13 +31,21 @@ msgstr "Langues Additionnelles"
 msgid "AlternatesLanguages"
 msgstr "Langues Additionnelles"
 
-#: ./interfaces.py:62
+#: ./interfaces.py:109
 msgid "Background image for about section"
 msgstr "Image de fond pour la section About"
 
-#: ./interfaces.py:101
+#: ./interfaces.py:176
 msgid "CSS classes for background"
 msgstr "Classes CSS pour le fond"
+
+#: ./interfaces.py:155
+msgid "Check if galleria is installed"
+msgstr "Cocher cette case si Galleria est installé"
+
+#: ./interfaces.py:148
+msgid "Galleria params"
+msgstr "Paramètres pour Galleria"
 
 #: ./configure.zcml:31
 msgid "Installs the Plone theme package plonetheme.iuem20."
@@ -47,19 +55,31 @@ msgstr "Installation du thème plonetheme.iuem20"
 msgid "Invalid adress email"
 msgstr "Le courriel n'est pas correctement formé"
 
-#: ./interfaces.py:47
+#: ./interfaces.py:168
+msgid "Javascript code needed to display a gallery"
+msgstr "Code javascript pour les galleries d'images"
+
+#: ./interfaces.py:94
 msgid "Logo filename, should be in"
 msgstr "Nom de l'image du logo, doit être placée dans"
 
-#: ./interfaces.py:55
+#: ./interfaces.py:172
+msgid "Misc CSS"
+msgstr "Divers CSS"
+
+#: ./interfaces.py:169
+msgid "Must be a valid javascript code"
+msgstr "Ce doit être une code javascript valide"
+
+#: ./interfaces.py:102
 msgid "Name of the default thumb image"
 msgstr "Nom de l'image par défaut pour les vignettes"
 
-#: ./interfaces.py:52
+#: ./interfaces.py:99
 msgid "Only One word"
 msgstr "Un seul mot"
 
-#: ./interfaces.py:71
+#: ./interfaces.py:118
 msgid "Only One word, used for news"
 msgstr "Un seul mot. Mot clé utilisé pour les actualités de la page HOME"
 
@@ -71,21 +91,29 @@ msgstr "Plone Theme: Iuem20"
 msgid "StartEndDates"
 msgstr "Dates début et Fin"
 
-#: ./interfaces.py:66
+#: ./interfaces.py:113
 msgid "Tag used for about items"
 msgstr "Mot clé pour les éléments de la section About"
 
-#: ./interfaces.py:70
+#: ./interfaces.py:117
 msgid "Tag used for news on home page"
 msgstr "Mot clé pour les actualités de la page HOME"
 
-#: ./interfaces.py:51
+#: ./interfaces.py:98
 msgid "Tag used for thumbnails on home page"
 msgstr "Mot clé pour les vignettes de la page HOME"
 
 #: ./browser/behaviors/configure.zcml:41
 msgid "Thumbnail"
 msgstr "Vignette"
+
+#: ./interfaces.py:160
+msgid "URL of the CSS resource for galleria"
+msgstr "URL des ressources CSS pour Galleria"
+
+#: ./interfaces.py:164
+msgid "URL of the Javascript resource for galleria"
+msgstr "URL des ressources Javascript pour Galleria"
 
 #: ./configure.zcml:40
 msgid "Uninstall: Plone Theme: Iuem20"
@@ -107,27 +135,27 @@ msgstr "Ajout des dates de début et de fin"
 msgid "add thumbnail image"
 msgstr "Ajpout d'un champ vignette"
 
-#: ./interfaces.py:43
+#: ./interfaces.py:90
 msgid "carousel interval"
 msgstr "Intervalle de défilement du carousel"
 
-#: ./interfaces.py:39
+#: ./interfaces.py:86
 msgid "carousel label"
 msgstr "Label du carousel"
 
-#: ./interfaces.py:93
+#: ./interfaces.py:140
 msgid "default_alt_lang_one_label"
 msgstr "Label par défaut pour le bouton de la première langue additionnelle"
 
-#: ./interfaces.py:97
+#: ./interfaces.py:144
 msgid "default_alt_lang_two_label"
 msgstr "Label par défaut pour le bouton de la seconde langue additionnelle"
 
-#: ./interfaces.py:84
+#: ./interfaces.py:131
 msgid "display document description for Home page"
 msgstr "Afficher la description du document pour la page HOME"
 
-#: ./interfaces.py:81
+#: ./interfaces.py:128
 msgid "display document title for Home page"
 msgstr "Afficher le titre du document pour la page HOME"
 
@@ -151,25 +179,29 @@ msgstr "Affiche l'heure (avec les dates) ?"
 msgid "end date"
 msgstr "Date de Fin"
 
-#: ./interfaces.py:40
+#: ./interfaces.py:87
 msgid "for carousel at home page"
 msgstr "pour le carousel de la page HOME"
 
-#: ./interfaces.py:67
+#: ./interfaces.py:114
 msgid "for home page"
 msgstr "pour la page HOME"
 
-#: ./interfaces.py:24
+#: ./interfaces.py:71
 msgid "home page settings"
 msgstr "Configuration de la page HOME"
 
-#: ./interfaces.py:102
+#: ./interfaces.py:177
 msgid "i.e. for portfolio background. One class per line"
-msgstr ""
+msgstr "Par exemple pour le fond des portfolio. Une classe CSS par ligne"
 
-#: ./interfaces.py:56
+#: ./interfaces.py:103
 msgid "in portal_skins/custom/images"
 msgstr "dans portal_skins/custom/images"
+
+#: ./browser/iuem20_home.py:18
+msgid "iuem20_home"
+msgstr "Vue page HOME"
 
 #: ./browser/behaviors/alt_languages.py:53
 msgid "label for alt language one button"
@@ -184,11 +216,11 @@ msgstr "Label pour le bouton de la seconde langue additionnelle"
 msgid "label_thumbnail"
 msgstr "Vignette"
 
-#: ./interfaces.py:75
+#: ./interfaces.py:122
 msgid "max news to display"
 msgstr "Nombre maximum d'actualités à afficher"
 
-#: ./interfaces.py:44
+#: ./interfaces.py:91
 msgid "milliseconds"
 msgstr "milisecondes"
 
@@ -200,7 +232,7 @@ msgstr "Configuration du module plonetheme.iuem20"
 msgid "plonetheme.iuem20 Settings Description"
 msgstr "Configurer ici les divers paramètres de ce module"
 
-#: ./interfaces.py:48
+#: ./interfaces.py:95
 msgid "portal_skins/custom/images"
 msgstr "portal_skins/custom/images"
 
@@ -220,7 +252,7 @@ msgstr "Date Début"
 msgid "thumbnail"
 msgstr "vignette"
 
-#: ./interfaces.py:59
+#: ./interfaces.py:106
 msgid "title for about section"
 msgstr "Titre de la section About"
 
@@ -228,3 +260,7 @@ msgstr "Titre de la section About"
 #: ./browser/behaviors/startenddates.py:27
 msgid "unselect to disable"
 msgstr "Décocher pour désactiver"
+
+#: ./interfaces.py:156
+msgid "used for images galleries"
+msgstr "pour les galleries d'images"

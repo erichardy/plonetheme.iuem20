@@ -209,7 +209,7 @@ def getGalleryImages(context):
             return False
     except Exception:
         return False
-    founds = api.content.find(context=c,
+    founds = api.content.find(context=carousel,
                               portal_type='Image',
                               path='/'.join(carousel.getPhysicalPath())
                               )

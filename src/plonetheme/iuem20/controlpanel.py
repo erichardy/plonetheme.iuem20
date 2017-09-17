@@ -20,5 +20,5 @@ class IPlonethemeIuem20SettingsForm(RegistryEditForm):
     """
 
 
-class IPlonethemeBebestSettingsControlPanel(ControlPanelFormWrapper):
+class IPlonethemeIuem20SettingsControlPanel(ControlPanelFormWrapper):
     form = IPlonethemeIuem20SettingsForm

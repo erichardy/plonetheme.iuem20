@@ -53,7 +53,7 @@
   <browser:page
        name="iuem20-settings"
        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-       class=".controlpanel.IPlonethemeBebestSettingsControlPanel"
+       class=".controlpanel.IPlonethemeIuem20SettingsControlPanel"
        permission="cmf.ManagePortal"
     />
 </configure>

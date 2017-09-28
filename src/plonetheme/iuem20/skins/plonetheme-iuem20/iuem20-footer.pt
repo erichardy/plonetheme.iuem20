@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.iuem20">
+<body>
+
+<metal:portlet define-macro="portlet">
+
+<div id="iuem20-footer"
+     class="text-center"
+     tal:define="portal_state context/@@plone_portal_state;
+                 portal_url portal_state/portal_url">
+<div class="foot-center-logos">
+	<div class="footer-logo">
+	  <a href="http://www.cnrs.fr/inee/index.htm">
+	    <img tal:attributes="src string:${portal_url}/logos/cnrs-inee.png" class="img-responsive" />
+	  </a>
+	</div>
+	<div class="footer-logo">
+	  <a href="http://www.univ-brest.fr/">
+	    <img tal:attributes="src string:${portal_url}/logos/ubo.png" class="img-responsive" />
+	  </a>
+	</div>
+	<!-- Fin des logos -->
+	<hr />
+	<div class="container">
+		<div class= "row">
+			<div class="col-xs-3">
+			<a href="#"><h5>Plan du site</h5></a>
+			</div>
+			<div class="col-xs-3">
+			<a href="#"><h5>Mentions légales</h5></a>
+			</div>
+			<div class="col-xs-3">
+			<a href="#"><h5>Presse</h5></a>
+			</div>
+			<div class="col-xs-3">
+			<a href="#"><h5>Contact</h5></a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</div>
+</metal:portlet>
+</body>
+</html>

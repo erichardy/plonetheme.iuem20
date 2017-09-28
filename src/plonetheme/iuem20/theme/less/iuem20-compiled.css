@@ -14762,10 +14762,10 @@ button.close {
   color: #808080;
 }
 .main-color {
-  color: #47AAC9;
+  color: #51ACC0;
 }
 .vivid {
-  color: #8BB797;
+  color: #D4776E;
 }
 .italic {
   font-style: italic;
@@ -14782,7 +14782,7 @@ button.close {
 }
 /* Headings */
 .super {
-  font-family: 'Courgette';
+  font-family: 'Playfair display regular';
   font-size: 3.5em;
   font-weight: 300;
   padding-left: 50px;
@@ -14791,7 +14791,7 @@ button.close {
   padding-bottom: 15px;
 }
 .super-small {
-  font-family: 'Courgette';
+  font-family: 'Playfair display regular';
   font-size: 2.5em;
   font-weight: 300;
   padding-top: 15px;
@@ -14809,7 +14809,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Exo';
+  font-family: 'Raleway-black';
   font-weight: normal;
 }
 h1,
@@ -14853,7 +14853,7 @@ h3,
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 36px;
-  font-family: 'Exo';
+  font-family: 'Raleway-black';
   font-weight: normal;
   font-size: 3em;
   text-align: left;
@@ -14880,7 +14880,7 @@ h3,
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 36px;
-    font-family: 'Exo';
+    font-family: 'Raleway-black';
     font-weight: normal;
     font-size: 3em;
     text-align: left;
@@ -14906,11 +14906,11 @@ h3,
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 24px;
-  font-family: 'Exo';
+  font-family: 'Raleway-black';
   font-weight: normal;
   font-size: 1.5em;
   text-align: left;
-  color: #47AAC9;
+  color: #51ACC0;
   font-weight: 600;
 }
 .iuem20-subtitle small,
@@ -14930,12 +14930,12 @@ h3,
 }
 /* Content font */
 body {
-  font-family: 'Merriweather';
+  font-family: 'Raleway-regular';
   font-size: 14px;
 }
 p,
 .p {
-  font-family: 'Merriweather';
+  font-family: 'Raleway-regular';
   font-size: 1.1em;
   line-height: 1.65;
   text-align: justify;
@@ -14943,22 +14943,22 @@ p,
 /* liens--------------------------------*/
 a,
 .a {
-  color: #47AAC9;
+  color: #51ACC0;
   text-decoration: none;
 }
 a:visited,
 .a:visited {
-  color: #47AAC9;
+  color: #51ACC0;
   text-decoration: none;
 }
 a:hover,
 .a:hover {
-  color: #DE963E;
+  color: #E9B752;
   text-decoration: none;
 }
 a:active,
 .a:actve {
-  color: #8BB797;
+  color: #D4776E;
   text-decoration: none;
 }
 /* Alignment */
@@ -14993,15 +14993,15 @@ nav#portal-globalnav-wrapper .navbar-iuem20 {
   font-size: 1.1em;
 }
 nav#portal-globalnav-wrapper .navbar-iuem20 .navbar-nav > li > a {
-  font-family: 'Exo';
+  font-family: 'Raleway-black';
   font-weight: 600;
   color: #000;
 }
 nav#portal-globalnav-wrapper .navbar-iuem20 .navbar-nav > li > a:hover {
-  color: #DE963E;
+  color: #E9B752;
 }
 nav#portal-globalnav-wrapper .navbar-iuem20 > .active > a {
-  color: #DE963E;
+  color: #E9B752;
   background-color: #eee;
 }
 nav#portal-globalnav-wrapper .navbar-toggle {
@@ -15333,10 +15333,10 @@ nav#portal-globalnav-wrapper .icon-bar {
 }
 #iuem20-home-news #news-Carousel .carousel-control span.glyphicon {
   text-shadow: none;
-  color: #47AAC9;
+  color: #51ACC0;
 }
 #iuem20-home-news #news-Carousel .carousel-control span.glyphicon:hover {
-  color: #DE963E;
+  color: #E9B752;
 }
 #iuem20-home-about {
   margin-top: 50px;
@@ -15354,7 +15354,7 @@ nav#portal-globalnav-wrapper .icon-bar {
   padding: 50px;
 }
 #iuem20-home-about .container .home-content {
-  font-family: 'Merriweather';
+  font-family: 'Raleway-regular';
   font-size: 1.1em;
   line-height: 1.65;
   text-align: justify;
@@ -15395,7 +15395,7 @@ section#iuem20-portrait .personnel-info {
   line-height: 200%;
 }
 section#iuem20-portrait .personnel-info .personnel-name {
-  font-family: 'Courgette';
+  font-family: 'Playfair display regular';
   font-size: 3.5em;
   font-weight: 300;
   padding-left: 50px;
@@ -15414,7 +15414,7 @@ section#iuem20-portrait .personnel-info .personnel-job {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 24px;
-  font-family: 'Exo';
+  font-family: 'Raleway-black';
   font-weight: normal;
   font-size: 1.5em;
 }
@@ -15642,7 +15642,7 @@ article#content .iuem20-page {
   display: none;
 }
 .main-line {
-  border-color: #47AAC9;
+  border-color: #51ACC0;
 }
 /* decalages*/
 .pushtop {

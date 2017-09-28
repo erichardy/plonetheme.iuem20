@@ -35,7 +35,7 @@ msgstr "Langues Additionnelles"
 msgid "Background image for about section"
 msgstr "Image de fond pour la section About"
 
-#: ./interfaces.py:176
+#: ./interfaces.py:183
 msgid "CSS classes for background"
 msgstr "Classes CSS pour le fond"
 
@@ -59,13 +59,17 @@ msgstr "Le courriel n'est pas correctement formé"
 msgid "Javascript code needed to display a gallery"
 msgstr "Code javascript pour les galleries d'images"
 
+#: ./interfaces.py:178
+msgid "Label for the News Collection view"
+msgstr "Titre pour la vue de la collection des actualités"
+
 #: ./interfaces.py:94
 msgid "Logo filename, should be in"
 msgstr "Nom de l'image du logo, doit être placée dans"
 
 #: ./interfaces.py:172
 msgid "Misc CSS"
-msgstr "Divers CSS"
+msgstr "Divers et CSS"
 
 #: ./interfaces.py:169
 msgid "Must be a valid javascript code"
@@ -191,7 +195,7 @@ msgstr "pour la page HOME"
 msgid "home page settings"
 msgstr "Configuration de la page HOME"
 
-#: ./interfaces.py:177
+#: ./interfaces.py:184
 msgid "i.e. for portfolio background. One class per line"
 msgstr "Par exemple pour le fond des portfolio. Une classe CSS par ligne"
 
@@ -199,9 +203,17 @@ msgstr "Par exemple pour le fond des portfolio. Une classe CSS par ligne"
 msgid "in portal_skins/custom/images"
 msgstr "dans portal_skins/custom/images"
 
+#: ./browser/iuem20_news_view.py:32
+msgid "iuem20-news-view"
+msgstr "Vue iuem20 Actus"
+
 #: ./browser/iuem20_home.py:18
 msgid "iuem20_home"
 msgstr "Vue page HOME"
+
+#: ./browser/iuem20_newsCollection_view.py:9
+msgid "iuem20_newsCollection"
+msgstr ""
 
 #: ./browser/behaviors/alt_languages.py:53
 msgid "label for alt language one button"

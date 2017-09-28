@@ -27,6 +27,20 @@
       template="iuem20_home.pt"
       permission="zope2.View"
       />
+   <browser:page
+      name="iuem20-news-view"
+      for="*"
+      class=".iuem20_news_view.iuem20NewsView"
+      template="iuem20_news_view.pt"
+      permission="zope2.View"
+      />
+    <browser:page
+       name="iuem20_newsCollection"
+       for="plone.app.contenttypes.interfaces.ICollection"
+       class=".iuem20_newsCollection_view.iuem20NewsCollection"
+       template="iuem20_newsCollection_view.pt"
+       permission="zope2.View"
+    />
 
    <browser:page
       name="galleria-resources"

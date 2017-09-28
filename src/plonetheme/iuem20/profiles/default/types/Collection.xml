@@ -15,9 +15,7 @@
 
   <!-- View information  -->
   <property name="view_methods" purge="false">
-  <!--
-   <element value="bebest_newsCollection"/>
-  -->
+   <element value="iuem20_newsCollection"/>
   </property>
 
 </object>

@@ -31,7 +31,7 @@ msgstr ""
 msgid "Background image for about section"
 msgstr ""
 
-#: ./interfaces.py:176
+#: ./interfaces.py:183
 msgid "CSS classes for background"
 msgstr ""
 
@@ -86,6 +86,10 @@ msgstr ""
 
 #: ./interfaces.py:168
 msgid "Javascript code needed to display a gallery"
+msgstr ""
+
+#: ./interfaces.py:178
+msgid "Label for the News Collection view"
 msgstr ""
 
 #: ./interfaces.py:94
@@ -202,7 +206,7 @@ msgstr ""
 msgid "home page settings"
 msgstr ""
 
-#: ./interfaces.py:177
+#: ./interfaces.py:184
 msgid "i.e. for portfolio background. One class per line"
 msgstr ""
 
@@ -210,9 +214,17 @@ msgstr ""
 msgid "in portal_skins/custom/images"
 msgstr ""
 
+#: ./browser/iuem20_news_view.py:32
+msgid "iuem20-news-view"
+msgstr ""
+
 #: ./browser/iuem20_home.py:18
 msgid "iuem20_home"
 msgstr "Vue page HOME"
+
+#: ./browser/iuem20_newsCollection_view.py:9
+msgid "iuem20_newsCollection"
+msgstr "Vue Collection d'actus"
 
 #: ./browser/behaviors/alt_languages.py:53
 msgid "label for alt language one button"

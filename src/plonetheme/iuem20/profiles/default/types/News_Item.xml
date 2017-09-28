@@ -9,9 +9,9 @@
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
- <property name="default_view">newsitem_view</property>
+ <property name="default_view">iuem20-news-view</property>
  <property name="view_methods">
-  <!-- <element value="bebest_news_view" /> -->
+  <element value="iuem20-news-view" />
   <element value="newsitem_view"/>
  </property>
  <property name="default_view_fallback">False</property>

@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.iuem20">
+
+<body>
+
+<metal:content-core fill-slot="main">
+<metal:block define-macro="main">
+
+  <div metal:define-macro="text-field-view"
+      id="parent-fieldname-text" class="stx"
+      tal:define="text view/text"
+      tal:condition="text"
+      tal:attributes="class view/text_class">
+    <div metal:define-slot="inside" tal:replace="structure text">The body</div>
+  </div>
+ <div class="container">
+ <div class="pushtop super text-center pushbottom">
+      <span tal:content="python:view.getLabel()">Actualit&eacute;s / News</span>
+ </div>
+ <div id="iuem20-news-collector">
+
+	 <metal:listingmacro define-macro="listing">
+	   <tal:results define="batch view/batch">
+	      <tal:listing condition="batch">
+	        <span tal:omit-tag="" tal:repeat="item batch">
+	        
+	          <div class="news-wrapper">
+	          <span tal:condition="python:item.portal_type == 'News Item'"
+	                tal:define="itemURL string:${item/getURL};
+	                            itemTitle string:${item/Title}">
+		          <a href="#" tal:attributes="href string:${itemURL}">
+	                   <div class="news-img img-circle">
+	                       <img tal:attributes="src string:${itemURL}/@@download/image/${item/image/filename}"
+	                            />
+	                   </div>
+	               </a>    
+	               <!-----les infos------>
+	               <div class="news-info">
+	                   <h3 tal:content="string:${itemTitle}">News Title</h3>
+	                   <hr/>
+	                   <p tal:content="string:${item/description}">New Item description</p>
+	                   <a tal:attributes="href string:${itemURL}">En savoir plus.../Show more...</a>
+	               </div>
+              </span>
+	          </div> <!-- class="news-wrapper" -->
+	        
+	        </span>
+	      </tal:listing>
+	   </tal:results>
+	 </metal:listingmacro>
+
+   </div>
+ </div>
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>
+  

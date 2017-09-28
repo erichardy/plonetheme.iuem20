@@ -15533,6 +15533,15 @@ body {
 article#content {
   /* margin-top: @h-padding; */
   padding: 0px 0px 25px 0px;
+  /* margin-right: auto;
+	margin-left: auto;
+	width: 1170px; */
+}
+article#content .iuem20-page {
+  padding: 0px 0px 25px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
 }
 /*-----images de fond fixes-----*/
 #bg-page-img {
@@ -15728,6 +15737,39 @@ article#content {
   padding: 0;
   height: 500px;
   background: #FFF;
+}
+.iuem20-news h3 {
+  font-weight: 700;
+}
+#iuem20-news-collector {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+#iuem20-news-collector .news-wrapper {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 35px;
+  min-height: 200px;
+}
+#iuem20-news-collector .news-img {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  left: 0;
+  margin-right: 15px;
+  float: left;
+}
+#iuem20-news-collector .news-img img {
+  height: 200px;
+  width: auto;
+}
+#iuem20-news-collector .news-info {
+  padding-top: 15px;
+  height: auto;
+}
+#iuem20-news-collector h3 {
+  font-family: 'Exo';
+  font-weight: 700;
 }
 .plone-toolbar-container {
   padding: 80px 0px 0px 0px;

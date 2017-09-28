@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.iuem20">
+
+<body>
+
+<metal:content-core fill-slot="main">
+  <metal:content-core define-macro="main">
+    <div class="container iuem20-news"
+         tal:define="description python:context.description;
+                     richText python:view.getRichText();
+                     dates python:view.getDates();
+                     news python:view.getOtherNews();"
+         >
+      <div class="row">
+        <!-----Contenu de la page----->
+        <div class="col-xs-12 col-sm-9">
+        <section>
+          <div class="actu-img">
+             <img tal:define="scale context/@@images"
+                  tal:replace="structure python: scale.scale('image', scale='large').tag(css_class='full-width img-responsive')"
+                  tal:on-error="string: No image for this News Item!" />
+          </div>
+          <!----Partie Info text------>
+          <div>
+              <!-----Champ title---->
+              <div class="iuem20-title">
+                  ${context/title}
+              </div> 
+              <!----------un petit filet------------>
+              <hr /> 
+              <!---Champ sous titre doit -il etre identique au champ description ?--->
+              <div class="iuem20-subtitle">
+	            <span tal:content="structure string:${description}">description</span>
+              </div> 
+              <!------ Date de l'evenement, doit etre un string text libre  pour pouvoir indiquer une date ou une période--->
+              <div tal:condition="dates"
+                   class="iuem20-dates">
+                  ${dates}
+              </div>
+          </div>
+        </section>
+           <div class="full-width row">
+             <div class="col-xs-12 col-md-10 col-md-offset-0">
+		       <section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
+		     </div>
+           </div>
+
+        <section tal:condition="richText">
+		  <span tal:content="structure string:${richText}">
+		    presentation FR
+		  </span>
+        </section>
+        </div>
+
+        <!-----acces aux actus précédentes----->
+        <div class="col-xs-12 col-sm-3 bg-light-grey pushbottom">
+          <h3 class="pushtop">Actualités</h3>
+          <!-----un petit filet--->
+          <hr class="main-line" />
+          <ul tal:condition="news">
+            <span tal:omit-tag=""
+                  tal:repeat="news_item news">
+              <li>
+                <a href=""
+                   tal:define="effective python:news_item.effective()"
+                   tal:attributes="href string:${news_item/absolute_url}"
+                   tal:content="string:${news_item/title} ${effective}">news item</a>
+              </li>
+            </span>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+   
+
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+  

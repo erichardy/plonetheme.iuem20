@@ -170,8 +170,15 @@ class IPlonethemeIuem20Settings(model.Schema):
         default=galleriaCode)
     model.fieldset('misc_css',
                    label=_(u'Misc CSS'),
-                   fields=['css_backgrounds',
-                           ])
+                   fields=[
+                       'news_collection_label',
+                       'css_backgrounds',
+                       ])
+    news_collection_label = TextLine(
+        title=_(u'Label for the News Collection view'),
+        description=_(u''),
+        default=u'Actualités / News'
+        )
     css_backgrounds = List(
         title=_(u'CSS classes for background'),
         description=_(u'i.e. for portfolio background. One class per line'),

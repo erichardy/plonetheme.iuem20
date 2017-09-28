@@ -11,8 +11,6 @@
                  richTextAlt2 view/getTextAlt2;
                  ">
 
-<div class="row">
-  <div class="col-xs-12 col-md-10 col-md-offset-1">
     <section id="iuem20-alt-languages" class="pushbottom">
 		<span tal:condition="python:display1 and richTextAlt1"
 		    class="align-right">
@@ -41,8 +39,6 @@
 		  </div>
 		</div>
    </section>
-  </div>
-</div>
 
 
 </div>

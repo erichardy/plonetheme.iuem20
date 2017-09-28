@@ -26,6 +26,13 @@
     </records>
 
 
+<!-- cf https://github.com/plone/Products.CMFPlone/issues/1663 -->
+  <records prefix="plone.bundles/plone"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="merge_with"></value>
+  </records>
+<!-- END cf https://github.com/plone/Products.CMFPlone/issues/1663 -->
+
    <!--  Records below installed by bobtemplate -->
 	<record name="plone.templates"
 	        interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"

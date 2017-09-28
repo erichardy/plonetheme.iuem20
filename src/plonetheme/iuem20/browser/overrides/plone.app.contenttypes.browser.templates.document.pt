@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.iuem20">
+<body
+	tal:define="portal_state context/@@plone_portal_state;
+	            portal_url portal_state/portal_url"
+	>
+
+<metal:content-core fill-slot="main">
+  <metal:content-core define-macro="main">
+    <div class="iuem20-page">
+        <div class="full-width row">
+            <div class="iuem20-title" tal:content="string:${context/title}">
+                    Title
+            </div> 
+            <!----------un petit filet------------>
+            <hr /> 
+            <!---Champ sous titre/description--->
+            <div class="iuem20-subtitle" tal:content="string:${context/description}">
+                Description
+            </div>
+        </div>
+		<div class="full-width row">
+			<section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
+		</div>
+        <!------Rich Text---------->
+        <div class="full-width row">
+            <div tal:content="structure string:${context/text/raw}">
+                  text FR
+            </div>
+        </div>
+    </div>
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+  

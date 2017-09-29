@@ -31,6 +31,11 @@
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="merge_with"></value>
   </records>
+  <records prefix="plone.bundles/plone-logged-in"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="merge_with"></value>
+  </records>
+  
 <!-- END cf https://github.com/plone/Products.CMFPlone/issues/1663 -->
 
    <!--  Records below installed by bobtemplate -->

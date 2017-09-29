@@ -14733,7 +14733,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Raleway-black';
+  font-family: 'Raleway', 'sans-serif';
   font-weight: normal;
 }
 h1,
@@ -14776,7 +14776,7 @@ h3,
   color: inherit;
   margin-top: 20px;
   font-size: 36px;
-  font-family: 'Raleway-black';
+  font-family: 'Raleway', 'sans-serif';
   font-weight: normal;
   font-size: 3em;
   text-align: left;
@@ -14804,7 +14804,7 @@ h3,
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 36px;
-    font-family: 'Raleway-black';
+    font-family: 'Raleway', 'sans-serif';
     font-weight: normal;
     font-size: 3em;
     text-align: left;
@@ -14830,7 +14830,7 @@ h3,
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 24px;
-  font-family: 'Raleway-black';
+  font-family: 'Raleway', 'sans-serif';
   font-weight: normal;
   font-size: 1.5em;
   text-align: left;
@@ -14854,12 +14854,12 @@ h3,
 }
 /* Content font */
 body {
-  font-family: 'Raleway-regular';
+  font-family: "Raleway", 'sans-serif';
   font-size: 14px;
 }
 p,
 .p {
-  font-family: 'Raleway-regular';
+  font-family: "Raleway", 'sans-serif';
   font-size: 1.1em;
   line-height: 1.65;
   text-align: justify;
@@ -14917,7 +14917,7 @@ nav#portal-globalnav-wrapper .navbar-iuem20 {
   font-size: 1.1em;
 }
 nav#portal-globalnav-wrapper .navbar-iuem20 .navbar-nav > li > a {
-  font-family: 'Raleway-black';
+  font-family: 'Raleway', 'sans-serif';
   font-weight: 600;
   color: #000;
 }
@@ -15286,7 +15286,7 @@ nav#portal-globalnav-wrapper .icon-bar {
   padding: 50px;
 }
 #iuem20-home-about .container .home-content {
-  font-family: 'Raleway-regular';
+  font-family: "Raleway", 'sans-serif';
   font-size: 1.1em;
   line-height: 1.65;
   text-align: justify;
@@ -15346,7 +15346,7 @@ section#iuem20-portrait .personnel-info .personnel-job {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 24px;
-  font-family: 'Raleway-black';
+  font-family: 'Raleway', 'sans-serif';
   font-weight: normal;
   font-size: 1.5em;
 }

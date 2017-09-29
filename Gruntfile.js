@@ -14,7 +14,8 @@ module.exports = function (grunt) {
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapURL: '++theme++plonetheme.iuem20/less/iuem20-compiled.css.map',
+                    /* sourceMapURL: '++theme++plonetheme.iuem20/less/iuem20-compiled.css.map', */
+                    sourceMapURL: 'less/iuem20-compiled.css.map',
                     sourceMapFilename: 'less/iuem20-compiled.css.map',
                     modifyVars: {
                         "isPlone": "false"

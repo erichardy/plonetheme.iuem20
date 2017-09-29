@@ -59,10 +59,10 @@ class iuem20NewsView(BrowserView):
 
     def getRichText(self):
         """
-        :return: retourne, en format *raw* le ``RichText`` anglais
+        :return: retourne, en format *output* le ``RichText`` anglais
         """
         try:
-            return self.context.text.raw
+            return self.context.text.output
         except Exception:
             return ''
 

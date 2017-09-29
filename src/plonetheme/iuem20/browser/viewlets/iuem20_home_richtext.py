@@ -16,7 +16,7 @@ class iuem20HomeRichText(base.ViewletBase):
         :return: Le contenu richText du document
         """
         try:
-            richtext = self.context.text.raw
+            richtext = self.context.text.output
         except Exception:
             # dans le cas ou on n'a pas de champ richText
             return None
@@ -45,7 +45,7 @@ class iuem20HomeRichText(base.ViewletBase):
     def getTextAlt1(self):
         richtext = u'<p />'
         try:
-            richtext = self.context.presentation_one.raw
+            richtext = self.context.presentation_one.output
         except Exception:
             return False
         if richtext < 6:
@@ -67,7 +67,7 @@ class iuem20HomeRichText(base.ViewletBase):
     def getTextAlt2(self):
         richtext = u'<p />'
         try:
-            richtext = self.context.presentation_two.raw
+            richtext = self.context.presentation_two.output
         except Exception:
             return False
         if richtext < 6:

@@ -14,6 +14,7 @@
   <metal:content-core define-macro="main">
     <div class="iuem20-page">
         <div class="full-width row">
+          <div class="col-xs-12">
             <div class="iuem20-title" tal:content="string:${context/title}">
                     Title
             </div> 
@@ -29,10 +30,11 @@
 		</div>
         <!------Rich Text---------->
         <div class="full-width row">
-            <div tal:content="structure string:${context/text/raw}">
+            <div tal:content="structure python:context.text.output" class="col-xs-12">
                   text FR
             </div>
         </div>
+      </div>
     </div>
   </metal:content-core>
 </metal:content-core>

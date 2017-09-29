@@ -13,7 +13,7 @@
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
  <property name="default_view">listing_view</property>
- <property name="view_methods" purge="False">
+ <property name="view_methods" purge="false">
   <element value="listing_view"/>
   <element value="summary_view"/>
   <element value="tabular_view"/>

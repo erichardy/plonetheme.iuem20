@@ -211,8 +211,12 @@ msgstr "Vue iuem20 Actus"
 msgid "iuem20_home"
 msgstr "Vue page HOME"
 
-#: ./browser/iuem20_newsCollection_view.py:9
+#: ./browser/iuem20_newsCollection_view.py:10
 msgid "iuem20_newsCollection"
+msgstr ""
+
+#: ./browser/iuem20_thumbs_view.py:19
+msgid "iuem20_thumbs_view"
 msgstr ""
 
 #: ./browser/behaviors/alt_languages.py:53

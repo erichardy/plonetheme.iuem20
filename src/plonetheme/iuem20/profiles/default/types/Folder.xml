@@ -13,14 +13,14 @@
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
  <property name="default_view">listing_view</property>
- <property name="view_methods">
+ <property name="view_methods" purge="False">
   <element value="listing_view"/>
   <element value="summary_view"/>
   <element value="tabular_view"/>
   <element value="full_view"/>
   <element value="album_view"/>
+  <element value="iuem20_thumbs_view"/>
   <!--
-  <element value="bebest_thumbs_view"/>
   <element value="event_listing"/>
   <element value="portraits_view"/>
   <element value="projects_view"/>

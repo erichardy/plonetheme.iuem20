@@ -14775,14 +14775,14 @@ h3,
   line-height: 1.1;
   color: inherit;
   margin-top: 20px;
-  margin-bottom: 10px;
   font-size: 36px;
   font-family: 'Raleway-black';
   font-weight: normal;
   font-size: 3em;
   text-align: left;
   margin-top: 80px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .iuem20-title small,
 .iuem20-title .small {
@@ -15102,7 +15102,7 @@ nav#portal-globalnav-wrapper .icon-bar {
 }
 #portal-footer-wrapper #iuem20-footer {
   background-color: #eeeeee;
-  padding: 30px 0;
+  padding: 0px 0px 0px 0px;
   bottom: 0px;
   width: auto;
   height: auto;
@@ -15470,16 +15470,15 @@ body {
 }
 article#content {
   /* margin-top: @h-padding; */
-  padding: 0px 0px 25px 0px;
+  padding: 0px 0px 0px 0px;
   /* margin-right: auto;
 	margin-left: auto;
 	width: 1170px; */
 }
 article#content .iuem20-page {
-  padding: 0px 0px 25px 0px;
-  margin-right: auto;
   margin-left: auto;
-  width: 1170px;
+  margin-right: auto;
+  width: 85%;
 }
 /*-----images de fond fixes-----*/
 #bg-page-img {

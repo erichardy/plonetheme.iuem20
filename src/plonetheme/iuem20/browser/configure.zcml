@@ -41,6 +41,13 @@
        template="iuem20_newsCollection_view.pt"
        permission="zope2.View"
     />
+   <browser:page
+      name="iuem20_thumbs_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".iuem20_thumbs_view.iuem20ThumbsView"
+      template="iuem20_thumbs_view.pt"
+      permission="zope2.View"
+      />
 
    <browser:page
       name="galleria-resources"

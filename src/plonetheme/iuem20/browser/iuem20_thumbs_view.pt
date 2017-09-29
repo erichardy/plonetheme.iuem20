@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.bebest">
+
+<body>
+
+<metal:content-core fill-slot="main">
+  <metal:content-core define-macro="main">
+  <div class="container" tal:define="objs python:view.getObjs();">
+
+   <div class="pushtop super text-center pushbottom">
+        	${context/title}
+   </div>
+   <div tal:define="description context/description"
+        class="text-justify col-xs-12">
+     <span tal:content="structure string:${description}">description</span>
+   </div>
+   
+   <!-----la gallerie, par ordre alphabetique------>
+   <div class="thumbnail-wrapper">
+     <span  tal:omit-tag="" tal:repeat="obj objs">
+     <div class="thumbnail-mission"
+          tal:define="imageURL python:view.getImageURL(obj)">
+       <a href="" tal:attributes="href string:${obj/absolute_url};
+                                  title string:${obj/description}">
+	      <div class="header">
+             <h4 tal:content="string:${obj/title}">project title</h4>
+          </div>
+	      <img tal:condition="imageURL"
+	           tal:attributes="src string:${imageURL}"
+	           class="img-mission" />
+      </a>    
+     </div>
+     </span>
+   </div>
+  </div>
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+  

@@ -28,7 +28,7 @@ class iuem20AltLanguages(base.ViewletBase):
             richtext = self.context.presentation_one.output
         except Exception:
             return False
-        if richtext < 6:
+        if len(richtext) < 6:
             return False
         return richtext
 
@@ -50,6 +50,6 @@ class iuem20AltLanguages(base.ViewletBase):
             richtext = self.context.presentation_two.output
         except Exception:
             return False
-        if richtext < 6:
+        if len(richtext) < 6:
             return False
         return richtext

@@ -18,4 +18,4 @@ class moreCss(BrowserView):
         css = getSettingValue('more_css')
         if (not css) or (len(css) < 1):
             css = ''
-        return '<style>' + css + '</style>'
+        return '<style>' + css.replace('\r', '').replace('\n', '') + '</style>'

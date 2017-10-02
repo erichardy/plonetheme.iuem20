@@ -67,6 +67,16 @@ galleriaCSS += u'themes/twelve/galleria.twelve.css'
 
 class IPlonethemeIuem20Settings(model.Schema):
 
+    model.fieldset('css overrides',
+                   label=_(u'css overrides'),
+                   fields=['more_css',
+                           ]
+                   )
+    more_css = Text(
+        title=_(u'more css'),
+        description=_(u'will overrides all other CSS'),
+        required=False)
+
     model.fieldset('home-page',
                    label=_(u'home page settings'),
                    fields=['carousel_label',

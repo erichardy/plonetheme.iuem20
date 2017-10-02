@@ -79,6 +79,15 @@
     />
 <!-- FIN VIEWLET Manager Alt Languages -->
 
+<browser:viewlet
+    name="more-css"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+    class=".more_css.moreCss"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="more_css.pt"
+    permission="zope2.View"
+    />
+
 
 <!--
 <browser:viewlet

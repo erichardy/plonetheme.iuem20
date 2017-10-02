@@ -23,7 +23,7 @@ msgid "Alt language two text"
 msgstr ""
 
 #: ./browser/behaviors/alt_languages.py:39
-#: ./interfaces.py:135
+#: ./interfaces.py:145
 msgid "Alternates languages"
 msgstr ""
 
@@ -31,19 +31,19 @@ msgstr ""
 msgid "AlternatesLanguages"
 msgstr ""
 
-#: ./interfaces.py:109
+#: ./interfaces.py:119
 msgid "Background image for about section"
 msgstr ""
 
-#: ./interfaces.py:183
+#: ./interfaces.py:193
 msgid "CSS classes for background"
 msgstr ""
 
-#: ./interfaces.py:155
+#: ./interfaces.py:165
 msgid "Check if galleria is installed"
 msgstr ""
 
-#: ./interfaces.py:148
+#: ./interfaces.py:158
 msgid "Galleria params"
 msgstr ""
 
@@ -55,35 +55,35 @@ msgstr ""
 msgid "Invalid adress email"
 msgstr ""
 
-#: ./interfaces.py:168
+#: ./interfaces.py:178
 msgid "Javascript code needed to display a gallery"
 msgstr ""
 
-#: ./interfaces.py:178
+#: ./interfaces.py:188
 msgid "Label for the News Collection view"
 msgstr ""
 
-#: ./interfaces.py:94
+#: ./interfaces.py:104
 msgid "Logo filename, should be in"
 msgstr ""
 
-#: ./interfaces.py:172
+#: ./interfaces.py:182
 msgid "Misc CSS"
 msgstr ""
 
-#: ./interfaces.py:169
+#: ./interfaces.py:179
 msgid "Must be a valid javascript code"
 msgstr ""
 
-#: ./interfaces.py:102
+#: ./interfaces.py:112
 msgid "Name of the default thumb image"
 msgstr ""
 
-#: ./interfaces.py:99
+#: ./interfaces.py:109
 msgid "Only One word"
 msgstr ""
 
-#: ./interfaces.py:118
+#: ./interfaces.py:128
 msgid "Only One word, used for news"
 msgstr ""
 
@@ -95,15 +95,15 @@ msgstr ""
 msgid "StartEndDates"
 msgstr ""
 
-#: ./interfaces.py:113
+#: ./interfaces.py:123
 msgid "Tag used for about items"
 msgstr ""
 
-#: ./interfaces.py:117
+#: ./interfaces.py:127
 msgid "Tag used for news on home page"
 msgstr ""
 
-#: ./interfaces.py:98
+#: ./interfaces.py:108
 msgid "Tag used for thumbnails on home page"
 msgstr ""
 
@@ -111,11 +111,11 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
-#: ./interfaces.py:160
+#: ./interfaces.py:170
 msgid "URL of the CSS resource for galleria"
 msgstr ""
 
-#: ./interfaces.py:164
+#: ./interfaces.py:174
 msgid "URL of the Javascript resource for galleria"
 msgstr ""
 
@@ -139,27 +139,31 @@ msgstr ""
 msgid "add thumbnail image"
 msgstr ""
 
-#: ./interfaces.py:90
+#: ./interfaces.py:100
 msgid "carousel interval"
 msgstr ""
 
-#: ./interfaces.py:86
+#: ./interfaces.py:96
 msgid "carousel label"
 msgstr ""
 
-#: ./interfaces.py:140
+#: ./interfaces.py:71
+msgid "css overrides"
+msgstr ""
+
+#: ./interfaces.py:150
 msgid "default_alt_lang_one_label"
 msgstr ""
 
-#: ./interfaces.py:144
+#: ./interfaces.py:154
 msgid "default_alt_lang_two_label"
 msgstr ""
 
-#: ./interfaces.py:131
+#: ./interfaces.py:141
 msgid "display document description for Home page"
 msgstr ""
 
-#: ./interfaces.py:128
+#: ./interfaces.py:138
 msgid "display document title for Home page"
 msgstr ""
 
@@ -183,23 +187,23 @@ msgstr ""
 msgid "end date"
 msgstr ""
 
-#: ./interfaces.py:87
+#: ./interfaces.py:97
 msgid "for carousel at home page"
 msgstr ""
 
-#: ./interfaces.py:114
+#: ./interfaces.py:124
 msgid "for home page"
 msgstr ""
 
-#: ./interfaces.py:71
+#: ./interfaces.py:81
 msgid "home page settings"
 msgstr ""
 
-#: ./interfaces.py:184
+#: ./interfaces.py:194
 msgid "i.e. for portfolio background. One class per line"
 msgstr ""
 
-#: ./interfaces.py:103
+#: ./interfaces.py:113
 msgid "in portal_skins/custom/images"
 msgstr ""
 
@@ -232,12 +236,17 @@ msgstr ""
 msgid "label_thumbnail"
 msgstr ""
 
-#: ./interfaces.py:122
+#: ./interfaces.py:132
 msgid "max news to display"
 msgstr ""
 
-#: ./interfaces.py:91
+#: ./interfaces.py:101
 msgid "milliseconds"
+msgstr ""
+
+#: ./browser/viewlets/more_css.py:14
+#: ./interfaces.py:76
+msgid "more css"
 msgstr ""
 
 #: ./controlpanel.py:11
@@ -248,7 +257,7 @@ msgstr ""
 msgid "plonetheme.iuem20 Settings Description"
 msgstr ""
 
-#: ./interfaces.py:95
+#: ./interfaces.py:105
 msgid "portal_skins/custom/images"
 msgstr ""
 
@@ -268,7 +277,7 @@ msgstr ""
 msgid "thumbnail"
 msgstr ""
 
-#: ./interfaces.py:106
+#: ./interfaces.py:116
 msgid "title for about section"
 msgstr ""
 
@@ -277,6 +286,10 @@ msgstr ""
 msgid "unselect to disable"
 msgstr ""
 
-#: ./interfaces.py:156
+#: ./interfaces.py:166
 msgid "used for images galleries"
+msgstr ""
+
+#: ./interfaces.py:77
+msgid "will overrides all other CSS"
 msgstr ""

@@ -1,0 +1,2 @@
+
+<span tal:omit-tag=""  tal:replace="structure string:${view/more_css}">more css</span>

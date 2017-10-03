@@ -15579,6 +15579,9 @@ article#content .iuem20-page {
 .full-width .personnel-bio {
   padding: 0px 50px 0px 0px;
 }
+.personnel-bio {
+  max-width: 1170px;
+}
 /* collapses */
 .iuem20-collapse {
   display: none;

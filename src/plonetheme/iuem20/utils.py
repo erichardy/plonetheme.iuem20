@@ -201,6 +201,20 @@ def isPublished(obj):
     return api.content.get_state(obj.getObject()) == 'published'
 
 
+def canView(obj):
+    if api.content.get_state(obj) == 'published':
+        return True
+    if not api.user.is_anonymous():
+        current = api.user.get_current()
+        username = current.getUserName()
+        perm = api.user.get_permissions(
+                    username=username, obj=obj
+                    )
+        return perm['View']
+    else:
+        return False
+
+
 def getGalleryImages(context):
     c = context
     try:

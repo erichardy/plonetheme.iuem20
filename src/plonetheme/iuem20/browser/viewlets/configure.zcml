@@ -88,6 +88,15 @@
     permission="zope2.View"
     />
 
+<browser:viewlet
+    name="iuem20-share"
+    manager="plone.app.layout.viewlets.interfaces.IGlobalStatusMessage"
+    class=".iuem20_share.iuem20Share"
+    layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
+    template="iuem20_share.pt"
+    permission="zope2.View"
+    />
+
 
 <!--
 <browser:viewlet

@@ -14901,6 +14901,13 @@ a:active,
   white-space: nowrap;
 }
 /* @nav-img-bg: #B1B1B1; */
+.iuem20-share {
+  position: fixed;
+  width: 50px;
+  top: 3px;
+  right: 3px;
+  z-index: 1000000;
+}
 nav#portal-globalnav-wrapper {
   padding: 5px 0px 5px 0px;
   margin: 0px;

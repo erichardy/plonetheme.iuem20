@@ -32,7 +32,7 @@
 				</div>
             </div>
 
-    <section class="pushbottom">
+    <section>
 		<span tal:condition="python:display1 and richTextAlt1"
 		    class="align-right">
 		      <button type="button"

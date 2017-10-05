@@ -1,5 +1,5 @@
 /* theme.less file that will be compiled */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,800,800i,900,900i');
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -14856,6 +14856,7 @@ p,
   font-family: "Raleway", 'sans-serif';
   font-size: 1.1em;
   line-height: 1.65;
+  font-weight: 400;
   text-align: justify;
 }
 /* liens--------------------------------*/
@@ -15290,6 +15291,7 @@ nav#portal-globalnav-wrapper .icon-bar {
   font-family: "Raleway", 'sans-serif';
   font-size: 1.1em;
   line-height: 1.65;
+  font-weight: 400;
   text-align: justify;
   text-align: center;
 }
@@ -15389,6 +15391,9 @@ div.iuem20-mission .mission-text {
 div.iuem20-project .project-text {
   padding: 10px 0px 0px 0px;
 }
+div.iuem20-project .project-missions {
+  margin: -10px 0px 0px 0px;
+}
 /* MISSION */
 div.iuem20-studysite .studysite-text {
   padding: 10px 0px 0px 0px;
@@ -15468,6 +15473,40 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: auto;
+}
+.iuem20-std-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+.mission-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  background-color: #fff;
+}
+.portrait-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  background-color: #fff;
+}
+.studysite-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  background-color: #fff;
+}
+.project-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  background-color: #fff;
+}
+.portfolio-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
 }
 article#content {
   /* margin-top: @h-padding; */

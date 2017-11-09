@@ -3,15 +3,67 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-      metal:use-macro="context/iuem20_home_main_template/macros/master"
+      metal:use-macro="context/main_template/macros/master"
       i18n:domain="plonetheme.iuem20">
 <body
 	tal:define="portal_state context/@@plone_portal_state;
-	            portal_url portal_state/portal_url">
+	            portal_url portal_state/portal_url;"
+	>
 
-<metal:content-core fill-slot="content">
+<metal:content-core fill-slot="main">
+<metal:content-core define-macro="main"
+                    tal:define="toc context/table_of_contents|nothing;">
+ <div class="iuem20-page">
+     <div class="iuem20-title" tal:content="string:${context/title}">
+       Title
+     </div>
+     <hr /> 
+     <!---Champ sous titre/description--->
+     <div class="iuem20-subtitle" tal:content="string:${context/description}">
+       Description
+     </div>
+     <br />
+  <section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
+  
+  <div id="parent-fieldname-text"
+      tal:condition="context/text"
+      tal:content="structure python:context.text.output_relative_to(view.context)"
+      />
+
+
+<div class="row bg-bright">
+ <span tal:define="related python:view.getRelatedItems()">
+ <div class="thumbnail-wrapper" tal:condition="related">
+   <span tal:omit-tag="" tal:repeat="rel related">
+     <div class="thumbnail-mission"
+          tal:define="src python:view.getObjThumbnailSrc(rel)">
+       <a href=""
+          tal:attributes="href string:${rel/absolute_url}">
+         <div class="header">
+          	<h4>${rel/title}</h4>
+         </div>
+         <div class="img-mission">
+           <img tal:attributes="src string:${src}" />
+         </div>
+       </a>
+     </div>
+   </span>
+ </div>
+ </span>
+</div>
+
+ <span tal:define="gallery python:view.getGalleryImages()">
+   <span tal:condition="gallery">
+        <metal:macro use-macro="context/iuem20_macros/macros/gallery-iuem20" />
+   </span>
+ </span>
+ </div>
 
 </metal:content-core>
+</metal:content-core>
+
+
+
 </body>
 </html>
   

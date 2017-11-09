@@ -218,7 +218,12 @@ def canView(obj):
 def getGalleryImages(context):
     c = context
     try:
-        carousel = c['carousel']
+        if c.portal_type == 'Document':
+            folder = c.aq_parent
+            carousselId = c.getId() + '-carousel'
+            carousel = folder.get(carousselId)
+        else:
+            carousel = c['carousel']
         if api.content.get_state(carousel) != 'published':
             return False
     except Exception:
@@ -229,6 +234,35 @@ def getGalleryImages(context):
                               )
     if len(founds) == 0:
         return False
-    images = [i.getObject() for i in founds
-              if api.content.get_state(i.getObject()) == 'published']
+    images = [i.getObject() for i in founds]
     return sorted(images, sort_by_position)
+
+
+def getRelatedItems(context):
+    c = context
+    relatedItems = c.relatedItems
+    if not relatedItems:
+        return 0
+    return [obj.to_object for obj in relatedItems]
+
+
+def getObjThumbnailSrc(context):
+    src = context.absolute_url()
+    try:
+        thumb = context.thumbnail
+        if thumb:
+            logger.info(thumb.filename)
+            src += '/@@download/thumbnail/' + thumb.filename
+            return src
+    except Exception:
+        pass
+    try:
+        image = context.image
+        if image:
+            src += '/@@download/image/' + image.filename
+            return src
+    except Exception:
+        pass
+    default = getSettingValue('default_thumb')
+    portal = api.portal.get()
+    return portal.absolute_url() + '/images/' + default

@@ -27,7 +27,8 @@ class iuem20CarouselView(BrowserView):
         context = self.context
         founds = api.content.find(context=context,
                                   portal_type='Image',
-                                  path='/'.join(context.getPhysicalPath())
+                                  path='/'.join(context.getPhysicalPath()),
+                                  depth=1,
                                   )
         if len(founds) == 0:
             return False

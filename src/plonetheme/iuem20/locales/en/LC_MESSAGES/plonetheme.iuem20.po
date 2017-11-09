@@ -211,6 +211,14 @@ msgstr ""
 msgid "iuem20-news-view"
 msgstr ""
 
+#: ./browser/iuem20_carousel_view.py:20
+msgid "iuem20_carousel_view"
+msgstr ""
+
+#: ./browser/iuem20_document.py:21
+msgid "iuem20_document"
+msgstr ""
+
 #: ./browser/iuem20_home.py:18
 msgid "iuem20_home"
 msgstr ""
@@ -244,7 +252,7 @@ msgstr ""
 msgid "milliseconds"
 msgstr ""
 
-#: ./browser/viewlets/more_css.py:14
+#: ./browser/viewlets/more_css.py:15
 #: ./interfaces.py:76
 msgid "more css"
 msgstr ""

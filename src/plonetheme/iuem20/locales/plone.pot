@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-02 17:04+0000\n"
+"POT-Creation-Date: 2017-11-09 17:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -230,6 +230,14 @@ msgstr ""
 msgid "iuem20-news-view"
 msgstr ""
 
+#: ./browser/iuem20_carousel_view.py:20
+msgid "iuem20_carousel_view"
+msgstr ""
+
+#: ./browser/iuem20_document.py:21
+msgid "iuem20_document"
+msgstr ""
+
 #: ./browser/iuem20_home.py:18
 msgid "iuem20_home"
 msgstr ""
@@ -278,7 +286,7 @@ msgstr ""
 msgid "milliseconds"
 msgstr ""
 
-#: ./browser/viewlets/more_css.py:14
+#: ./browser/viewlets/more_css.py:15
 #: ./interfaces.py:76
 msgid "more css"
 msgstr ""

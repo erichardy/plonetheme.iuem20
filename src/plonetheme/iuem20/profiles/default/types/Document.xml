@@ -11,5 +11,6 @@
    <property name="view_methods" purge="false">
      <element value="document_view"/>
      <element value="iuem20_home"/>
+     <element value="iuem20_document"/>
    </property>
 </object>

@@ -28,6 +28,14 @@
       permission="zope2.View"
       />
    <browser:page
+      name="iuem20_document"
+      for="*"
+      class=".iuem20_document.iuem20Document"
+      template="iuem20_document.pt"
+      permission="zope2.View"
+      />
+
+   <browser:page
       name="iuem20-news-view"
       for="*"
       class=".iuem20_news_view.iuem20NewsView"

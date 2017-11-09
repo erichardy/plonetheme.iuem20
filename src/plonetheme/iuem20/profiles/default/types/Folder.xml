@@ -20,6 +20,7 @@
   <element value="full_view"/>
   <element value="album_view"/>
   <element value="iuem20_thumbs_view"/>
+  <element value="iuem20_carousel_view"/>
   <!--
   <element value="event_listing"/>
   <element value="portraits_view"/>

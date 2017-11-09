@@ -52,12 +52,14 @@
  </span>
 </div>
 
+</div>
+
  <span tal:define="gallery python:view.getGalleryImages()">
    <span tal:condition="gallery">
         <metal:macro use-macro="context/iuem20_macros/macros/gallery-iuem20" />
    </span>
  </span>
- </div>
+
 
 </metal:content-core>
 </metal:content-core>

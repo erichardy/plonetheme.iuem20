@@ -58,6 +58,14 @@
       />
 
    <browser:page
+      name="iuem20_carousel_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".iuem20_carousel_view.iuem20CarouselView"
+      template="iuem20_carousel_view.pt"
+      permission="zope2.View"
+      />
+   
+   <browser:page
       name="galleria-resources"
       for="*"
       class=".galleria_resources.galleriaResources"

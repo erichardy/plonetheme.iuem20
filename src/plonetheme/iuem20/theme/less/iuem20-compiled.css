@@ -15722,7 +15722,19 @@ article#content .iuem20-page {
   /* .full-width;
      height: 600px;
      width: 800px; */
+  width: 800px;
+  height: 600px;
   background: #FFF;
+}
+@media screen and (max-width: 991px) {
+  .galleria {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .galleria {
+    width: 500px;
+  }
 }
 .iuem20-news h3 {
   font-weight: 700;

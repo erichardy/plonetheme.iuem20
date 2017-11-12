@@ -19,17 +19,10 @@
 	      tal:attributes="href string:${galleria_css}" />
 	<script src=""
 	        tal:attributes="src string:${galleria_js}"></script>
-	<style>
-	  /*
-	  .galleria {
-	  	width: 100%;
-	  	height: 600px;
-	  }*/
-	</style>
 	<span tal:replace="nothing">
 	Pour utiliser cette macro, la liste des images est contenue dans la variable ``gallery``
 	</span>
-	<div class="galleria row col-xs-12 col-md-12 col-md-offset-0">
+	<div class="galleria row col-xs-12 col-md-12 col-lg-offset-2 col-md-offset-0">
 		<span tal:omit-tag=""
 		      tal:repeat="im gallery">
 		  <img tal:attributes="src string:${im/absolute_url};
@@ -39,46 +32,7 @@
 		</span>
 	</div>
 	<script tal:content="string:${galleria_code}">
-	  Galleria.loadTheme('++theme++plonetheme.iuem20/galleria/themes/twelve/galleria.twelve.min.js');
-	  Galleria.configure({
-		autoplay: 5000,
-		imageCrop: true,
-		responsive: true,
-		swipe: 'auto',
-		lightbox: true,
-		idleMode: 'hover',
-		pauseOnInteraction: true,
-		carousel: false,
-		easing: 'galleriaIn',
-		imagePan: true,
-		showInfo: true,
-		variation: 'light',
-    	transition: 'fade',
-    	// Toggles the fullscreen button
-        _showFullscreen: true,
-
-        // Toggles the lightbox button
-        _showPopout: true,
-
-        // Toggles the progress bar when playing a slideshow
-        _showProgress: true,
-
-        // Toggles tooltip
-        _showTooltip: true,
-
-        // Localized strings, modify these if you want tooltips in your language
-        _locale: {
-            show_thumbnails: "Show thumbnails",
-            hide_thumbnails: "Hide thumbnails",
-            play: "Play slideshow",
-            pause: "Pause slideshow",
-            enter_fullscreen: "Enter fullscreen",
-            exit_fullscreen: "Exit fullscreen",
-            popout_image: "Popout image",
-            showing_image: "Showing image %s of %s"
-        }
-	  });
-	  Galleria.run('.galleria');
+	  galleria_code
 	</script>
   </div>
  </div>

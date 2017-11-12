@@ -15467,6 +15467,7 @@ i.link-https:after {
 /* LAYOUT ---------------------------------*/
 body {
   background-color: #fff;
+  color: #000;
   min-height: 100vh;
   width: auto;
   background-position: top;

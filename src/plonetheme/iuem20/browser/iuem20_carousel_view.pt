@@ -10,25 +10,28 @@
 
 <metal:content-core fill-slot="main">
 <metal:content-core define-macro="main">
- <div class="container">
-   <div class="super text-center">
-        	${context/title}
+<span tal:define="gallery python:view.getGalleryImages();
+                  nb_images python:len(gallery)">
+ <div class="row">
+   <div class="text-center col-md-offset-1 col-md-11 col-ms-12 col-sm-offset-0">
+      <div class="super">${context/title}</div>
+      <div>(${nb_images} images)</div>
    </div>
+  </div>
+  <div class="row">
    <div tal:define="description context/description"
-        class="text-justify col-xs-12">
+        class="text-justify col-md-offset-1 col-md-11 col-ms-12 col-sm-offset-0">
      <span tal:content="structure string:${description}">description</span>
    </div>
-   
-  <span tal:define="gallery python:view.getGalleryImages()">
-   <span tal:condition="gallery">
+  </div>
+  <div class="row">
+   <div tal:condition="gallery" class="col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0">
         <metal:macro use-macro="context/iuem20_macros/macros/gallery-iuem20" />
-   </span>
-  </span>
- </div>
-
+   </div>
+  </div>
+</span>
 </metal:content-core>
 </metal:content-core>
 
 </body>
 </html>
-  

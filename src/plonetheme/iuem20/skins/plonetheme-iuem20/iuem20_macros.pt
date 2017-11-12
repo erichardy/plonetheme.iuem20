@@ -22,12 +22,12 @@
 	<span tal:replace="nothing">
 	Pour utiliser cette macro, la liste des images est contenue dans la variable ``gallery``
 	</span>
-	<div class="galleria row col-xs-12 col-md-12 col-lg-offset-2 col-md-offset-0">
+	<div class="galleria">
 		<span tal:omit-tag=""
 		      tal:repeat="im gallery">
 		  <img tal:attributes="src string:${im/absolute_url};
 		                       data-title string:${im/title};
-		                       data-description string:${im/description}"
+		                       data-description string:${im/description};"
 		       tal:on-error="string: Image cannot be displayed" />
 		</span>
 	</div>

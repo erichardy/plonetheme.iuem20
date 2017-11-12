@@ -20,10 +20,11 @@
 	<script src=""
 	        tal:attributes="src string:${galleria_js}"></script>
 	<style>
+	  /*
 	  .galleria {
 	  	width: 100%;
 	  	height: 600px;
-	  }
+	  }*/
 	</style>
 	<span tal:replace="nothing">
 	Pour utiliser cette macro, la liste des images est contenue dans la variable ``gallery``

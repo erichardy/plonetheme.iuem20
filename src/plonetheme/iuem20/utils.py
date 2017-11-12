@@ -67,23 +67,13 @@ def getHomeObject(registry_record,
     if obj_type:
         founds = api.content.find(context=portal,
                                   portal_type=obj_type,
-                                  state='published'
-                                  )
+                                  Subject=(tag))
     else:
         founds = api.content.find(context=portal,
-                                  state='published'
-                                  )
+                                  Subject=(tag))
     if len(founds) == 0:
         return False
-    objs = []
-    for found in founds:
-        obj = found.getObject()
-        state = api.content.get_state(obj)
-        if (tag in obj.Subject()) and (state == 'published'):
-            # if tag in obj.Subject():
-            objs.append(obj)
-    if len(objs) == 0:
-        return False
+    objs = [found.getObject() for found in founds]
     if effective:
         sortedObjs = sorted(objs,
                             key=lambda obj: obj.effective(),

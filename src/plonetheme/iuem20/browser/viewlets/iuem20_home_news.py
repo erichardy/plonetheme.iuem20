@@ -22,7 +22,8 @@ class iuem20HomeNews(base.ViewletBase):
         homeNews = getHomeObject(registry_record=tag_reg,
                                  obj_type='News Item',
                                  effective=True)
-        # import pdb;pdb.set_trace()
+        if not homeNews:
+            return False
         try:
             max_news = int(getSettingValue('max_news'))
         except Exception:

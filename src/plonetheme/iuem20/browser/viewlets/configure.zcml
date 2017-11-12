@@ -13,7 +13,7 @@
     layer="plonetheme.iuem20.interfaces.IPlonethemeIuem20Layer"
     permission="zope2.View"
     />
-
+<!-- -->
 <browser:viewlet
     name="iuem20-home-carousel"
     manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
@@ -22,6 +22,7 @@
     template="iuem20_home_carousel.pt"
     permission="zope2.View"
     />
+<!-- -->
 
 <browser:viewlet
     name="iuem20-home-thumbnails"
@@ -31,7 +32,7 @@
     template="iuem20_home_thumbnails.pt"
     permission="zope2.View"
     />
-
+<!-- -->
 <browser:viewlet
     name="iuem20-home-news"
     manager="plonetheme.iuem20.browser.viewlets.interfaces.IIUEM20Home"
@@ -58,6 +59,7 @@
     template="iuem20_home_richtext.pt"
     permission="zope2.View"
     />
+<!--  -->
 <!-- FIN Viewlet manager pour la HOME Page et ses viewlets -->
 
 <!-- VIEWLET Manager Alt Languages -->

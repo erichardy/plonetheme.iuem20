@@ -15719,13 +15719,10 @@ article#content .iuem20-page {
 /* Fin portlets */
 /* Galleria module */
 .galleria {
-  width: 100%;
-  padding: 0px 0px 0px 0px;
-  height: 500px;
+  /* .full-width;
+     height: 600px;
+     width: 800px; */
   background: #FFF;
-}
-.galleria .personnel-bio {
-  padding: 0px 50px 0px 0px;
 }
 .iuem20-news h3 {
   font-weight: 700;

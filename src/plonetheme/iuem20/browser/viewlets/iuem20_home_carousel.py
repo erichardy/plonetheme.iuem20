@@ -36,9 +36,10 @@ class iuem20HomeCarousel(base.ViewletBase):
                 objs.append(image.getObject())
             # logger.info(len(images))
         except Exception:
-            logger.info('0 images !...')
+            logger.info('carousel folder not found')
         # logger.info(str(len(objs)) + ' images dans le carousel')
         if len(objs) == 0:
+            logger.info('no images in carousel folder')
             return False
         return objs
 

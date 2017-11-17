@@ -14962,7 +14962,7 @@ nav#portal-globalnav-wrapper #iuem20-links ul li {
   line-height: 1.1em;
 }
 nav#portal-globalnav-wrapper #iuem20-links ul li a {
-  color: #BBB;
+  color: #FFF;
   /* font-weight: 700; */
   font-size: 1.0em;
   /* text-transform: uppercase; */
@@ -14987,10 +14987,10 @@ nav#portal-globalnav-wrapper #iuem20-links ul li.socials {
   width: 35px;
 }
 nav#portal-globalnav-wrapper #iuem20-links ul li.socials a img {
-  background-color: #BBB;
+  background-color: #FFF;
 }
 nav#portal-globalnav-wrapper #iuem20-links ul li.socials a img:hover {
-  background-color: #FFF;
+  background-color: #BBB;
 }
 nav#portal-globalnav-wrapper #iuem20-links ul li.links {
   float: right;
@@ -15511,7 +15511,7 @@ body {
 }
 article#content {
   /* margin-top: @h-padding; */
-  padding: 0px 0px 0px 0px;
+  padding: 0px 20px 0px 20px;
   /* margin-right: auto;
 	margin-left: auto;
 	width: 1170px; */
@@ -15715,7 +15715,7 @@ article#content .iuem20-page {
 }
 /* Portlets */
 #portal-column-two {
-  padding: 40px 0px 0px 0px;
+  padding: 40px 15px 0px 0px;
 }
 /* Fin portlets */
 /* Galleria module */

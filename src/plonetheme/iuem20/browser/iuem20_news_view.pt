@@ -18,7 +18,7 @@
          >
       <div class="row">
         <!-----Contenu de la page----->
-        <div class="col-xs-12 col-sm-9">
+        <div class="col-xs-12 col-sm-9 bg-bright">
         <section>
           <div class="actu-img">
              <img tal:define="scale context/@@images"
@@ -44,11 +44,9 @@
               </div>
           </div>
         </section>
-           <div class="full-width row">
-             <div class="col-xs-12 col-md-10 col-md-offset-0">
-		       <section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
-		     </div>
-           </div>
+        <div class="iuem20-std-text">
+		    <section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
+        </div>
 
         <section tal:condition="richText">
 		  <span tal:content="structure string:${richText}">
